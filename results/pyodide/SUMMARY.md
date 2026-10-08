@@ -2,7 +2,7 @@
 
 Runner: `scripts/run_node_tests.sh` (`test/node/run.mjs`). Node v22.22.0 (V8 12.4.254.21-node.33), Intel Xeon @ 2.80GHz, 4 vCPUs.
 `import funground` and all 87 renderable sketches work on the wasm wheels. The 4 pixel differences come from JPEG decoding
-in Pyodide's pygame-ce/Pillow, not from cairo. pygame's mixer cannot start in Pyodide, which stops 4 of the 91 golden sketches.
+in Pyodide's pygame-ce/Pillow, plus (projects-05 only) pygame-ce's smoothscale GENERIC vs SSE2 backend; not from cairo (see ../jpeg-check/SUMMARY.md). pygame's mixer cannot start in Pyodide, which stops 4 of the 91 golden sketches.
 
 ## Versions in the Pyodide run (`versions.json`)
 | | |

@@ -5,8 +5,8 @@
  "summary": {
   "all": {
    "images": 4,
-   "errors": 3,
-   "identical": 0,
+   "errors": 0,
+   "identical": 3,
    "differing": 1,
    "max_abs_diff_overall": 1,
    "median_max_abs_diff": 1.0,
@@ -34,8 +34,8 @@
   },
   "gallery": {
    "images": 4,
-   "errors": 3,
-   "identical": 0,
+   "errors": 0,
+   "identical": 3,
    "differing": 1,
    "max_abs_diff_overall": 1,
    "median_max_abs_diff": 1.0,
@@ -59,13 +59,70 @@
  "missing_reference": [],
  "images": {
   "gallery/images-01_load_image": {
-   "error": "ValueError: cannot work out the size of /home/user/scratch/native/gallery/images-01_load_image.rgb (768000 bytes, size None)"
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
   },
   "gallery/images-02_tint_and_parts": {
-   "error": "ValueError: cannot work out the size of /home/user/scratch/native/gallery/images-02_tint_and_parts.rgb (768000 bytes, size None)"
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
   },
   "gallery/images-04_filters": {
-   "error": "ValueError: cannot work out the size of /home/user/scratch/native/gallery/images-04_filters.rgb (768000 bytes, size None)"
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
   },
   "gallery/projects-05_typographic_portrait": {
    "width": 600,
