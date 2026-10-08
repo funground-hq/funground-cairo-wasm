@@ -1,6 +1,6 @@
 {
  "a": "/home/user/scratch/pyo",
- "reference": "/home/user/scratch/native",
+ "reference": "/home/user/scratch/nonsimd",
  "reference_kind": "rendered",
  "summary": {
   "all": {

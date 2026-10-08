@@ -10,7 +10,7 @@
 | S-134.1 Toolchain | emsdk 5.0.3, pyodide-build 0.39.1, xbuildenv 314.0.7 on host CPython 3.14, working around the blocked hosts | `scripts/setup_toolchain.sh`, README |
 | S-134.2 wasm build | pycairo 1.29.2 wheel with static cairo 1.18.4, pixman 0.46.4, libpng, zlib; three small patches | `scripts/build_wasm.sh`, `patches/` |
 | S-134.3 Native control and harness | native build from the same sources is byte-identical to all 91 goldens | `results/native/` |
-| S-134.4 Pyodide in Node | Session 1: 13/13 identical; gallery 70/74 identical, 4 JPEG-decoder differences, 4 need sound | `results/pyodide/` |
+| S-134.4 Pyodide in Node | Session 1: 13/13 identical; gallery 70/74 identical, 4 differences from JPEG decoding and pygame smoothscale, cairo verified clean, 4 need sound | `results/pyodide/` |
 | S-134.5 Text | uharfbuzz from PyPI's wasm wheel; skia-pathops built (required by `import funground`) | `scripts/build_pathops_wasm.sh` |
 | S-134.6 Frame time | Cairo replay at 1280×800: 16.5 ms mean in Node vs 7.8 native (2.0×); Python `draw()` dominates full frames | `results/bench_comparison.md` |
 | S-134.7 Size | 1.65 MB for the three wheels | RESULTS.md (d) |

@@ -98,7 +98,11 @@ Pyodide in Node. All images are compared byte for byte, then per pixel.
   | images-04_filters | 41 874 (16.4 %) | 128 | 1.13 |
   | projects-05_typographic_portrait | 11 297 (4.2 %) | 93 | 0.92 |
 
-  These are not edge-only differences: they cover the photo's area. JPEG_CHECK_PLACEHOLDER
+  These are not edge-only differences: they cover the photo's area. **Cairo is clean on all four**
+  (`results/jpeg-check/`): with the photo given to both sides as a lossless PNG, images-01, -02 and -04 are
+  byte-identical between Pyodide and native. projects-05 keeps 622 pixels off by 1 level on letter edges. The
+  cause is pygame-ce's `smoothscale` (used by `picture.resize()`), which runs its SSE2 backend natively and
+  GENERIC in Pyodide. Forcing GENERIC natively makes the two renders byte-identical. pixman SIMD has no effect.
 - **Sound:** `pygame.mixer.init()` cannot start in Pyodide under Node ("Couldn't create audio thread
   startup semaphore"), so 4 gallery goldens with sound fail to run (`music-07`, `music-10`,
   `projects-04`, `projects-07`). With `MIXER_STUB=1`, a silent stand-in used for measuring only, they
@@ -171,7 +175,8 @@ pygame-ce) are not counted; that budget belongs to S-139.
 4. **`pkg-config --static`:** in the wasm prefix, `cairo.pc` lists its dependencies under `Requires`,
    so no wrapper was needed. The native build needed a `--static` wrapper.
 5. **No sound in Node:** `pygame.mixer` can't start. A measurement-only stub is used for the bench.
-6. **JPEG decoding differs** in Pyodide's Pillow and pygame-ce (see (b)).
+6. **JPEG decoding differs** in Pyodide's Pillow and pygame-ce, and pygame-ce's `smoothscale` uses a
+   different backend (GENERIC vs SSE2). Both are outside cairo (see (b)).
 
 ## Not verified
 
