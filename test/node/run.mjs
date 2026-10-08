@@ -1,7 +1,7 @@
 // Run the S-134 harness (golden renders and/or benchmark) in Pyodide under plain Node (no npm install).
 //   PYODIDE_DIST=/path/to/pyodide  FUNGROUND=/path/to/funground  WHEELS=dist  PYWHEELS=build/pywheels \
 //   OUT=results/pyodide  MODE=goldens|bench|all  node test/node/run.mjs [-- extra bench.py args]
-// Env: BENCH_ARGS / GOLDEN_ARGS (extra args for bench.main / render_goldens.main, space separated), BENCH_OUT.
+// Env: BENCH_ARGS / GOLDEN_ARGS (extra args for bench.main / render_goldens.main, space separated), BENCH_OUT, MIXER_STUB=1 (stub pygame.mixer).
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -57,6 +57,16 @@ sys.dont_write_bytecode = True
 os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
 sys.path.insert(0, "/repo/harness")
 `);
+
+// Opt-in: MIXER_STUB=1 replaces pygame.mixer (which cannot start in Pyodide, see test/node/mixer_stub.py).
+if (env.MIXER_STUB === "1") {
+  py.runPython(`
+import sys
+sys.path.insert(0, "/repo/test/node")
+import mixer_stub; mixer_stub.install()
+print("MIXER STUB INSTALLED: pygame.mixer replaced, nothing is played")
+`);
+}
 
 // Versions.
 const versions = JSON.parse(py.runPython(`

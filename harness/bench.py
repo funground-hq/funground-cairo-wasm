@@ -60,16 +60,19 @@ def run_capture(path, frames=fgrun.FRAMES):
     fgrun.reset_funground()
     sketch = api.active_sketch()
     per_frame = []
+    frame_ops = []
     orig_render = sketch._render
 
     def counting_render():
         per_frame.append(len(sketch.last_ops or ()))
+        frame_ops.append(tuple(sketch.last_ops or ()))
         orig_render()
 
     sketch._render = counting_render
     (w, h), data = fgrun.run_sketch(path, frames=frames)
     ops = tuple(sketch.last_ops or ())
     run_capture.per_frame = per_frame
+    run_capture.frame_ops = frame_ops
     return (w, h), ops, data
 
 
@@ -245,6 +248,9 @@ def main(argv=None) -> int:
     ap.add_argument("--frames", type=int, default=30, help="timed repetitions per measurement")
     ap.add_argument("--warmup", type=int, default=5)
     ap.add_argument("--ids", default="", help="comma-separated example ids to time instead of the top N")
+    ap.add_argument("--peak-ids", default="",
+                    help="comma-separated example ids whose peak-op frame (most ops of the 30) is also replayed "
+                         "(for redraw-on-change sketches whose last frame has 0 ops)")
     ap.add_argument("--count-only", action="store_true", help="only count ops")
     args = ap.parse_args(argv)
 
@@ -327,6 +333,35 @@ def main(argv=None) -> int:
               " ".join(f"{k}={v['median_ms']}ms" for k, v in rp.items()) + " full " +
               " ".join(f"{k}={v.get('frame', {}).get('median_ms') if isinstance(v.get('frame'), dict) else v.get('error')}ms"
                        for k, v in rec["full_frame"].items()), flush=True)
+
+    doc["peak_replay"] = []
+    for ident in [i for i in args.peak_ids.split(",") if i]:
+        path = Path(paths[ident])
+        rec = {"id": ident}
+        scratch = tempfile.mkdtemp(prefix="fg-bench-")
+        start = os.getcwd()
+        os.chdir(scratch)
+        try:
+            size, _, _ = run_capture(path)
+            frames_ops = run_capture.frame_ops
+            peak = max(range(len(frames_ops)), key=lambda i: len(frames_ops[i]))
+            rec.update(canvas=list(size), peak_frame_index=peak, ops=len(frames_ops[peak]), replay={})
+            for density in (1, 2):
+                r = replay_times(frames_ops[peak], size, density, args.warmup, args.frames)
+                r.pop("_bgra")
+                rec["replay"][f"{TARGET_W * density}x{TARGET_H * density}"] = r
+        except BaseException as exc:                  # noqa: BLE001
+            if isinstance(exc, KeyboardInterrupt):
+                raise
+            rec["error"] = f"{type(exc).__name__}: {exc}"
+        finally:
+            os.chdir(start)
+            try:
+                fgrun.end_test()
+            except Exception:                         # noqa: BLE001
+                pass
+        doc["peak_replay"].append(rec)
+        print(f"peak replay {ident}: " + " ".join(f"{k}={v['median_ms']}ms" for k, v in rec.get("replay", {}).items()), flush=True)
 
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(doc, indent=1), encoding="utf-8")

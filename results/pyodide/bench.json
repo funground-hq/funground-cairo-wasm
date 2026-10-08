@@ -1,0 +1,3034 @@
+{
+ "environment": {
+  "python": "3.14.2",
+  "implementation": "CPython",
+  "platform": "emscripten",
+  "machine": "wasm32",
+  "env": {
+   "FUNGROUND_HEADLESS": "1",
+   "FUNGROUND_BACKING_SCALE": null,
+   "PIXMAN_DISABLE": null,
+   "SDL_VIDEODRIVER": "dummy"
+  },
+  "pycairo": "1.29.2",
+  "cairo": "1.18.4",
+  "pygame": "2.5.7",
+  "uharfbuzz": "0.56.3",
+  "pathops": "0.9.2",
+  "fontTools": "4.62.1"
+ },
+ "config": {
+  "timed_repetitions": 30,
+  "warmup": 5,
+  "top": 10,
+  "target_logical_canvas": [
+   640,
+   400
+  ],
+  "frames_to_reach_ops": 30
+ },
+ "ranking": [
+  {
+   "id": "projects-02_rangoli",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 636,
+   "canvas": [
+    560,
+    620
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 636,
+   "ops_first": 636,
+   "ops_median": 636.0,
+   "op_types": {
+    "Circle": 391,
+    "Concat": 97,
+    "Save": 49,
+    "Restore": 49,
+    "FillPath": 33,
+    "Rect": 16
+   }
+  },
+  {
+   "id": "projects-06_kinetic_type",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 633,
+   "canvas": [
+    640,
+    320
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 633,
+   "ops_first": 633,
+   "ops_median": 633.0,
+   "op_types": {
+    "Circle": 631,
+    "Clear": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "text-09_text_dots",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 507,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 507,
+   "ops_first": 507,
+   "ops_median": 507.0,
+   "op_types": {
+    "Circle": 504,
+    "Text": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "randomness-03_noise",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 419,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 419,
+   "ops_first": 419,
+   "ops_median": 419.0,
+   "op_types": {
+    "Rect": 416,
+    "Clear": 1,
+    "FillPath": 1,
+    "StrokePath": 1
+   }
+  },
+  {
+   "id": "sound-02_write_a_tune",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 413,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 413,
+   "ops_first": 413,
+   "ops_median": 413.0,
+   "op_types": {
+    "Line": 400,
+    "Rect": 11,
+    "Clear": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "randomness-02_gaussian_and_choice",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 401,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 401,
+   "ops_first": 401,
+   "ops_median": 401.0,
+   "op_types": {
+    "Circle": 400,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "studios-03_rhythm",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 371,
+   "canvas": [
+    842,
+    595
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 371,
+   "ops_first": 371,
+   "ops_median": 371,
+   "op_types": {
+    "Save": 72,
+    "Concat": 72,
+    "Rect": 72,
+    "Circle": 72,
+    "Restore": 72,
+    "Line": 5
+   }
+  },
+  {
+   "id": "studios-05_text_as_geometry",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 290,
+   "canvas": [
+    420,
+    595
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 290,
+   "ops_first": 290,
+   "ops_median": 290,
+   "op_types": {
+    "Circle": 278,
+    "Save": 3,
+    "Concat": 3,
+    "Restore": 3,
+    "FillPath": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "paths-06_outlines",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 249,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 249,
+   "ops_first": 249,
+   "ops_median": 249.0,
+   "op_types": {
+    "Circle": 225,
+    "FillPath": 16,
+    "StrokePath": 3,
+    "Text": 3,
+    "Clear": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "studios-06_poster_series",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 229,
+   "canvas": [
+    595,
+    842
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 229,
+   "ops_first": 229,
+   "ops_median": 229.0,
+   "op_types": {
+    "Circle": 64,
+    "Save": 48,
+    "Restore": 48,
+    "Concat": 36,
+    "Text": 12,
+    "ClipPath": 8
+   }
+  },
+  {
+   "id": "transforms-03_shear_and_matrices",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 208,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 208,
+   "ops_first": 208,
+   "ops_median": 208.0,
+   "op_types": {
+    "Rect": 192,
+    "Concat": 5,
+    "Save": 4,
+    "Restore": 4,
+    "Clear": 1,
+    "ResetMatrix": 1
+   }
+  },
+  {
+   "id": "randomness-01_confetti",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 161,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 161,
+   "ops_first": 161,
+   "ops_median": 161.0,
+   "op_types": {
+    "Circle": 160,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "studios-02_proximity",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 149,
+   "canvas": [
+    576,
+    576
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 149,
+   "ops_first": 149,
+   "ops_median": 149,
+   "op_types": {
+    "Circle": 144,
+    "Text": 4,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "music-09_compose_and_save",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 141,
+   "canvas": [
+    560,
+    360
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 141,
+   "ops_first": 141,
+   "ops_median": 141.0,
+   "op_types": {
+    "Rect": 128,
+    "Text": 11,
+    "Clear": 1,
+    "Line": 1
+   }
+  },
+  {
+   "id": "music-08_draw_a_wave",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 111,
+   "canvas": [
+    640,
+    420
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 111,
+   "ops_first": 111,
+   "ops_median": 111.0,
+   "op_types": {
+    "Rect": 51,
+    "Circle": 48,
+    "Text": 6,
+    "StrokePath": 2,
+    "Clear": 1,
+    "Line": 1
+   }
+  },
+  {
+   "id": "music-11_piano_roll",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 110,
+   "canvas": [
+    640,
+    440
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 111,
+   "ops_first": 104,
+   "ops_median": 107.0,
+   "op_types": {
+    "Text": 46,
+    "Rect": 45,
+    "Line": 15,
+    "Clear": 1,
+    "Save": 1,
+    "Restore": 1
+   }
+  },
+  {
+   "id": "colour-04_color_mode",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 101,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 101,
+   "ops_first": 101,
+   "ops_median": 101.0,
+   "op_types": {
+    "Rect": 81,
+    "Circle": 16,
+    "Text": 3,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "curves-01_curves",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 98,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 98,
+   "ops_first": 98,
+   "ops_median": 98.0,
+   "op_types": {
+    "Line": 30,
+    "Concat": 28,
+    "Save": 14,
+    "Restore": 14,
+    "Circle": 6,
+    "StrokePath": 5
+   }
+  },
+  {
+   "id": "shapes-03_modes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 87,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 87,
+   "ops_first": 87,
+   "ops_median": 87.0,
+   "op_types": {
+    "Rect": 16,
+    "Text": 16,
+    "Save": 12,
+    "Concat": 12,
+    "Restore": 12,
+    "Circle": 11
+   }
+  },
+  {
+   "id": "transforms-02_saved_state",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 74,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 74,
+   "ops_first": 74,
+   "ops_median": 74.0,
+   "op_types": {
+    "Concat": 24,
+    "Save": 12,
+    "Rect": 12,
+    "Restore": 12,
+    "Circle": 12,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "music-10_ear_training",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 62,
+   "canvas": [
+    640,
+    420
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 62,
+   "ops_first": 62,
+   "ops_median": 62.0,
+   "op_types": {
+    "Text": 34,
+    "Rect": 27,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "music-06_see_your_voice",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 61,
+   "canvas": [
+    520,
+    440
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 61,
+   "ops_first": 61,
+   "ops_median": 61.0,
+   "op_types": {
+    "Rect": 42,
+    "Text": 8,
+    "Line": 4,
+    "Save": 2,
+    "Restore": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "studios-01_placement",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 55,
+   "canvas": [
+    420,
+    595
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 55,
+   "ops_first": 55,
+   "ops_median": 55,
+   "op_types": {
+    "Rect": 9,
+    "Save": 9,
+    "Concat": 9,
+    "Ellipse": 9,
+    "Circle": 9,
+    "Restore": 9
+   }
+  },
+  {
+   "id": "lines-03_pixel_art",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 54,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 56,
+   "ops_first": 56,
+   "ops_median": 54.0,
+   "op_types": {
+    "Rect": 46,
+    "Concat": 2,
+    "Circle": 2,
+    "Clear": 1,
+    "Save": 1,
+    "Restore": 1
+   }
+  },
+  {
+   "id": "paths-02_path_and_clip",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 53,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 53,
+   "ops_first": 53,
+   "ops_median": 53.0,
+   "op_types": {
+    "Concat": 12,
+    "Circle": 12,
+    "Save": 7,
+    "StrokePath": 7,
+    "Restore": 7,
+    "FillPath": 6
+   }
+  },
+  {
+   "id": "images-05_svg",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 52,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 52,
+   "ops_first": 52,
+   "ops_median": 52.0,
+   "op_types": {
+    "Line": 35,
+    "Text": 4,
+    "Concat": 4,
+    "Image": 3,
+    "Save": 2,
+    "Restore": 2
+   }
+  },
+  {
+   "id": "colour-02_hsb_and_hsl",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 50,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 50,
+   "ops_first": 50,
+   "ops_median": 50.0,
+   "op_types": {
+    "Rect": 35,
+    "Circle": 12,
+    "Text": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "motion-01_movers",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 49,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 49,
+   "ops_first": 49,
+   "ops_median": 49.0,
+   "op_types": {
+    "Line": 18,
+    "Concat": 12,
+    "Circle": 6,
+    "Save": 6,
+    "Restore": 6,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "projects-04_voice_game",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 45,
+   "canvas": [
+    640,
+    420
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 45,
+   "ops_first": 45,
+   "ops_median": 45.0,
+   "op_types": {
+    "Circle": 14,
+    "Text": 14,
+    "Rect": 12,
+    "Line": 3,
+    "Ellipse": 2
+   }
+  },
+  {
+   "id": "projects-03_raga_explorer",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 42,
+   "canvas": [
+    720,
+    470
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 42,
+   "ops_first": 42,
+   "ops_median": 42.0,
+   "op_types": {
+    "Text": 27,
+    "Rect": 14,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "interaction-05_controls",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 39,
+   "canvas": [
+    480,
+    360
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 39,
+   "ops_first": 39,
+   "ops_median": 39.0,
+   "op_types": {
+    "Concat": 10,
+    "Save": 9,
+    "Ellipse": 9,
+    "Restore": 9,
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "music-02_see_a_chord",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 38,
+   "canvas": [
+    600,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 38,
+   "ops_first": 38,
+   "ops_median": 38.0,
+   "op_types": {
+    "Rect": 24,
+    "Text": 13,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "text-02_align",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 38,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 38,
+   "ops_first": 38,
+   "ops_median": 38.0,
+   "op_types": {
+    "Line": 24,
+    "Text": 13,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "music-04_hear_a_raga",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 34,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 34,
+   "ops_first": 34,
+   "ops_median": 34.0,
+   "op_types": {
+    "Text": 21,
+    "Circle": 12,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "text-06_tracking_and_features",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 34,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 34,
+   "ops_first": 34,
+   "ops_median": 34.0,
+   "op_types": {
+    "Text": 16,
+    "Save": 8,
+    "Restore": 8,
+    "Clear": 1,
+    "Line": 1
+   }
+  },
+  {
+   "id": "sound-03_sargam_over_a_drone",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 31,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 31,
+   "ops_first": 26,
+   "ops_median": 29.5,
+   "op_types": {
+    "Text": 13,
+    "Rect": 12,
+    "Line": 5,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "transforms-01_rotating_squares",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 31,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 31,
+   "ops_first": 31,
+   "ops_median": 31.0,
+   "op_types": {
+    "Concat": 15,
+    "Save": 5,
+    "Rect": 5,
+    "Restore": 5,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "lines-02_caps_joins_dashes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 30,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 30,
+   "ops_first": 30,
+   "ops_median": 30.0,
+   "op_types": {
+    "Save": 7,
+    "Restore": 7,
+    "Text": 6,
+    "Line": 4,
+    "StrokePath": 3,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "studios-04_boolean_shapes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 28,
+   "canvas": [
+    595,
+    420
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 28,
+   "ops_first": 28,
+   "ops_median": 28,
+   "op_types": {
+    "FillPath": 6,
+    "Save": 5,
+    "Concat": 5,
+    "Restore": 5,
+    "Text": 4,
+    "StrokePath": 2
+   }
+  },
+  {
+   "id": "text-07_formatted",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 28,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 28,
+   "ops_first": 28,
+   "ops_median": 28.0,
+   "op_types": {
+    "Text": 23,
+    "Rect": 2,
+    "Clear": 1,
+    "FillPath": 1,
+    "StrokePath": 1
+   }
+  },
+  {
+   "id": "images-04_filters",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 27,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 1,
+   "ops_peak": 27,
+   "ops_first": 27,
+   "ops_median": 27,
+   "op_types": {
+    "Text": 12,
+    "Image": 11,
+    "Clear": 2,
+    "Pixels": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "music-05_tala",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 25,
+   "canvas": [
+    560,
+    480
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 25,
+   "ops_first": 25,
+   "ops_median": 25.0,
+   "op_types": {
+    "Text": 23,
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "paths-03_no_clip",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 25,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 25,
+   "ops_first": 25,
+   "ops_median": 25.0,
+   "op_types": {
+    "Rect": 16,
+    "Save": 2,
+    "Circle": 2,
+    "Restore": 2,
+    "Clear": 1,
+    "ClipPath": 1
+   }
+  },
+  {
+   "id": "paths-05_booleans",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 25,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 25,
+   "ops_first": 25,
+   "ops_median": 25.0,
+   "op_types": {
+    "Text": 6,
+    "StrokePath": 6,
+    "Rect": 5,
+    "FillPath": 4,
+    "Clear": 1,
+    "Save": 1
+   }
+  },
+  {
+   "id": "text-05_text_path",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 25,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 25,
+   "ops_first": 25,
+   "ops_median": 25.0,
+   "op_types": {
+    "Rect": 15,
+    "FillPath": 3,
+    "Text": 3,
+    "Clear": 1,
+    "Save": 1,
+    "ClipPath": 1
+   }
+  },
+  {
+   "id": "compositing-01_blend_opacity_shadow",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 24,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 24,
+   "ops_first": 24,
+   "ops_median": 24.0,
+   "op_types": {
+    "Circle": 12,
+    "Text": 6,
+    "Rect": 5,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "maths-01_map_and_lerp",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 24,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 24,
+   "ops_first": 24,
+   "ops_median": 24.0,
+   "op_types": {
+    "Circle": 21,
+    "Clear": 1,
+    "Line": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "images-03_pixels",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 23,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 1,
+   "ops_peak": 23,
+   "ops_first": 23,
+   "ops_median": 23,
+   "op_types": {
+    "Rect": 9,
+    "Text": 5,
+    "Image": 3,
+    "SetAntialias": 2,
+    "Pixels": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "text-03_text_box",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 21,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 21,
+   "ops_first": 21,
+   "ops_median": 21.0,
+   "op_types": {
+    "Text": 18,
+    "Rect": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "animation-03_clock",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 20,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 20,
+   "ops_first": 20,
+   "ops_median": 20.0,
+   "op_types": {
+    "Concat": 6,
+    "Save": 3,
+    "Line": 3,
+    "Restore": 3,
+    "Text": 3,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "shapes-02_more_shapes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 17,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 17,
+   "ops_first": 17,
+   "ops_median": 17.0,
+   "op_types": {
+    "FillPath": 6,
+    "StrokePath": 6,
+    "Text": 3,
+    "Clear": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "images-01_load_image",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 14,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 14,
+   "ops_first": 14,
+   "ops_median": 14.0,
+   "op_types": {
+    "Image": 3,
+    "Text": 3,
+    "Save": 2,
+    "Concat": 2,
+    "Restore": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "images-02_tint_and_parts",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 14,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 14,
+   "ops_first": 14,
+   "ops_median": 14.0,
+   "op_types": {
+    "Image": 6,
+    "Text": 6,
+    "Clear": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "shapes-01_basic_shapes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 14,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 14,
+   "ops_first": 14,
+   "ops_median": 14.0,
+   "op_types": {
+    "Point": 9,
+    "Clear": 1,
+    "Rect": 1,
+    "Circle": 1,
+    "Ellipse": 1,
+    "Line": 1
+   }
+  },
+  {
+   "id": "music-03_sing_with_the_drone",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 13,
+   "canvas": [
+    640,
+    360
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 13,
+   "ops_first": 13,
+   "ops_median": 13.0,
+   "op_types": {
+    "Text": 6,
+    "Line": 4,
+    "Rect": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "saving-03_save_frames",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 13,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 13,
+   "ops_first": 13,
+   "ops_median": 13.0,
+   "op_types": {
+    "Circle": 12,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "shapes-04_rounded",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 13,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 13,
+   "ops_first": 13,
+   "ops_median": 13.0,
+   "op_types": {
+    "Rect": 9,
+    "Clear": 1,
+    "Text": 1,
+    "FillPath": 1,
+    "StrokePath": 1
+   }
+  },
+  {
+   "id": "text-10_fallback",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 13,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 13,
+   "ops_first": 13,
+   "ops_median": 13.0,
+   "op_types": {
+    "Text": 9,
+    "Clear": 1,
+    "Rect": 1,
+    "Save": 1,
+    "Restore": 1
+   }
+  },
+  {
+   "id": "lines-01_fill_and_stroke",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 12,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 12,
+   "ops_first": 12,
+   "ops_median": 12.0,
+   "op_types": {
+    "Line": 8,
+    "Clear": 1,
+    "Circle": 1,
+    "Rect": 1,
+    "Ellipse": 1
+   }
+  },
+  {
+   "id": "projects-07_scratch_card",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 12,
+   "canvas": [
+    640,
+    440
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 12,
+   "ops_first": 12,
+   "ops_median": 12.0,
+   "op_types": {
+    "Text": 4,
+    "Circle": 3,
+    "FillPath": 3,
+    "Clear": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "animation-05_record_a_gif",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 9,
+   "canvas": [
+    240,
+    240
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 9,
+   "ops_first": 9,
+   "ops_median": 9.0,
+   "op_types": {
+    "Circle": 8,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "colour-03_gradients",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 9,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 9,
+   "ops_first": 9,
+   "ops_median": 9.0,
+   "op_types": {
+    "Rect": 2,
+    "Concat": 2,
+    "Clear": 1,
+    "Circle": 1,
+    "Line": 1,
+    "Save": 1
+   }
+  },
+  {
+   "id": "documents-01_booklet",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 9,
+   "canvas": [
+    595,
+    420
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 9,
+   "ops_first": 9,
+   "ops_median": 9,
+   "op_types": {
+    "Text": 4,
+    "Rect": 2,
+    "Circle": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "basics-03_a_script",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 8,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 8,
+   "ops_first": 8,
+   "ops_median": 8,
+   "op_types": {
+    "Circle": 2,
+    "FillPath": 2,
+    "Clear": 1,
+    "Rect": 1,
+    "Line": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "colour-01_colour_forms",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 8,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 8,
+   "ops_first": 8,
+   "ops_median": 8.0,
+   "op_types": {
+    "Rect": 4,
+    "Circle": 3,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "animation-04_pause",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 7,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 1,
+   "ops_peak": 7,
+   "ops_first": 7,
+   "ops_median": 7,
+   "op_types": {
+    "Concat": 2,
+    "Clear": 1,
+    "Save": 1,
+    "Rect": 1,
+    "Restore": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "music-07_a_songs_fingerprint",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 7,
+   "canvas": [
+    520,
+    320
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 7,
+   "ops_first": 7,
+   "ops_median": 7.0,
+   "op_types": {
+    "Text": 5,
+    "Clear": 1,
+    "Image": 1
+   }
+  },
+  {
+   "id": "sound-04_tuner",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 7,
+   "canvas": [
+    520,
+    360
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 7,
+   "ops_first": 7,
+   "ops_median": 7.0,
+   "op_types": {
+    "Text": 3,
+    "Rect": 2,
+    "Clear": 1,
+    "StrokePath": 1
+   }
+  },
+  {
+   "id": "text-04_fonts",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 7,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 7,
+   "ops_first": 7,
+   "ops_median": 7.0,
+   "op_types": {
+    "Text": 6,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "music-01_tap_along",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 6,
+   "canvas": [
+    560,
+    360
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 6,
+   "ops_first": 6,
+   "ops_median": 6.0,
+   "op_types": {
+    "Text": 4,
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "text-08_variations",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 6,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 6,
+   "ops_first": 6,
+   "ops_median": 6.0,
+   "op_types": {
+    "Text": 5,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "compositing-03_scratch_card",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 5,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 5,
+   "ops_first": 5,
+   "ops_median": 5.0,
+   "op_types": {
+    "Rect": 2,
+    "Clear": 1,
+    "Text": 1,
+    "Image": 1
+   }
+  },
+  {
+   "id": "paths-04_holes",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 5,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 5,
+   "ops_first": 5,
+   "ops_median": 5.0,
+   "op_types": {
+    "FillPath": 2,
+    "StrokePath": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "text-01_text",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 5,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 5,
+   "ops_first": 5,
+   "ops_median": 5.0,
+   "op_types": {
+    "Text": 4,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "interaction-04_window",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 4,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 4,
+   "ops_first": 4,
+   "ops_median": 4.0,
+   "op_types": {
+    "Text": 2,
+    "Clear": 1,
+    "Rect": 1
+   }
+  },
+  {
+   "id": "paths-01_star",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 4,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 4,
+   "ops_first": 4,
+   "ops_median": 4.0,
+   "op_types": {
+    "StrokePath": 2,
+    "Clear": 1,
+    "FillPath": 1
+   }
+  },
+  {
+   "id": "basics-02_setup_and_draw",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "compositing-02_graphics",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Image": 2,
+    "Clear": 1
+   }
+  },
+  {
+   "id": "documents-02_flip_book",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    320,
+    240
+   ],
+   "frames_drawn": 0,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3,
+   "op_types": {
+    "Clear": 1,
+    "Ellipse": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "interaction-01_follow_the_mouse",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "interaction-03_keyboard_mover",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "projects-08_flow_field_print",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    720,
+    509
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Clear": 1,
+    "Rect": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "saving-01_save_a_picture",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 3,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 3.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "animation-01_bounce",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 2,
+   "ops_first": 2,
+   "ops_median": 2.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "animation-02_time_based",
+   "time_dependent": true,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 2,
+   "ops_first": 2,
+   "ops_median": 2.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "basics-01_first_sketch",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 2,
+   "ops_first": 2,
+   "ops_median": 2.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "compositing-04_layers",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 2,
+   "ops_first": 2,
+   "ops_median": 2.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "interaction-02_paint",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 3,
+   "ops_first": 3,
+   "ops_median": 2.0,
+   "op_types": {
+    "Rect": 1,
+    "Text": 1
+   }
+  },
+  {
+   "id": "saving-02_transparent_png",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 2,
+   "canvas": [
+    640,
+    400
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 2,
+   "ops_first": 2,
+   "ops_median": 2.0,
+   "op_types": {
+    "Clear": 1,
+    "Circle": 1
+   }
+  },
+  {
+   "id": "projects-01_event_posters",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 0,
+   "canvas": [
+    480,
+    680
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 409,
+   "ops_first": 409,
+   "ops_median": 0.0,
+   "op_types": {}
+  },
+  {
+   "id": "projects-05_typographic_portrait",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 0,
+   "canvas": [
+    600,
+    450
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 1377,
+   "ops_first": 1377,
+   "ops_median": 0.0,
+   "op_types": {}
+  },
+  {
+   "id": "saving-04_poster_file",
+   "time_dependent": false,
+   "status": "ok",
+   "ops": 0,
+   "canvas": [
+    480,
+    640
+   ],
+   "frames_drawn": 30,
+   "ops_peak": 0,
+   "ops_first": 0,
+   "ops_median": 0.0,
+   "op_types": {}
+  },
+  {
+   "id": "sound-01_visualiser",
+   "time_dependent": true,
+   "status": "error",
+   "ops": -1,
+   "error": "ValueError: f.load_sound(): 'data/tune.wav' is not a sound funground can read (mixer stub: sounds from files are not supported)"
+  }
+ ],
+ "ranking_by_peak_ops": [
+  [
+   "projects-05_typographic_portrait",
+   1377
+  ],
+  [
+   "projects-02_rangoli",
+   636
+  ],
+  [
+   "projects-06_kinetic_type",
+   633
+  ],
+  [
+   "text-09_text_dots",
+   507
+  ],
+  [
+   "randomness-03_noise",
+   419
+  ],
+  [
+   "sound-02_write_a_tune",
+   413
+  ],
+  [
+   "projects-01_event_posters",
+   409
+  ],
+  [
+   "randomness-02_gaussian_and_choice",
+   401
+  ],
+  [
+   "studios-03_rhythm",
+   371
+  ],
+  [
+   "studios-05_text_as_geometry",
+   290
+  ],
+  [
+   "paths-06_outlines",
+   249
+  ],
+  [
+   "studios-06_poster_series",
+   229
+  ],
+  [
+   "transforms-03_shear_and_matrices",
+   208
+  ],
+  [
+   "randomness-01_confetti",
+   161
+  ],
+  [
+   "studios-02_proximity",
+   149
+  ],
+  [
+   "music-09_compose_and_save",
+   141
+  ],
+  [
+   "music-08_draw_a_wave",
+   111
+  ],
+  [
+   "music-11_piano_roll",
+   111
+  ],
+  [
+   "colour-04_color_mode",
+   101
+  ],
+  [
+   "curves-01_curves",
+   98
+  ]
+ ],
+ "ranking_note": "ops = IR ops of the last (30th) frame, the steady state after warm-up; ops_peak = most ops in any of the 30 frames. A sketch that redraws only when something changed (dirty flag) can have ops=0 in its last frame.",
+ "top": [
+  {
+   "id": "projects-02_rangoli",
+   "ops": 636,
+   "canvas": [
+    560,
+    620
+   ],
+   "op_types": {
+    "Circle": 391,
+    "Concat": 97,
+    "Save": 49,
+    "Restore": 49,
+    "FillPath": 33,
+    "Rect": 16
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 8.906,
+     "mean_ms": 9.471,
+     "min_ms": 8.425,
+     "max_ms": 13.357,
+     "stdev_ms": 1.272,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 0.64516,
+     "replay_equals_final_frame": false
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 12.768,
+     "mean_ms": 12.874,
+     "min_ms": 12.206,
+     "max_ms": 15.637,
+     "stdev_ms": 0.619,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 1.29032
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 28.173,
+      "mean_ms": 35.765,
+      "min_ms": 25.166,
+      "max_ms": 236.021,
+      "stdev_ms": 37.318
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 15.282,
+      "mean_ms": 15.887,
+      "min_ms": 13.732,
+      "max_ms": 23.719,
+      "stdev_ms": 2.129
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 11.649,
+      "mean_ms": 12.494,
+      "min_ms": 10.687,
+      "max_ms": 21.243,
+      "stdev_ms": 2.205
+     },
+     "canvas_physical": [
+      560,
+      620
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 33.087,
+      "mean_ms": 65.164,
+      "min_ms": 30.149,
+      "max_ms": 953.481,
+      "stdev_ms": 165.011
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 14.337,
+      "mean_ms": 15.03,
+      "min_ms": 13.369,
+      "max_ms": 21.234,
+      "stdev_ms": 1.732
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 18.117,
+      "mean_ms": 18.92,
+      "min_ms": 16.299,
+      "max_ms": 28.672,
+      "stdev_ms": 2.929
+     },
+     "canvas_physical": [
+      1120,
+      1240
+     ]
+    }
+   }
+  },
+  {
+   "id": "projects-06_kinetic_type",
+   "ops": 633,
+   "canvas": [
+    640,
+    320
+   ],
+   "op_types": {
+    "Circle": 631,
+    "Clear": 1,
+    "Text": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 18.739,
+     "mean_ms": 18.734,
+     "min_ms": 16.286,
+     "max_ms": 21.686,
+     "stdev_ms": 1.387,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": false
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 22.167,
+     "mean_ms": 22.457,
+     "min_ms": 20.32,
+     "max_ms": 26.28,
+     "stdev_ms": 1.408,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 107.849,
+      "mean_ms": 119.606,
+      "min_ms": 99.84,
+      "max_ms": 232.852,
+      "stdev_ms": 26.702
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 88.441,
+      "mean_ms": 95.307,
+      "min_ms": 83.637,
+      "max_ms": 140.653,
+      "stdev_ms": 13.549
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 16.846,
+      "mean_ms": 18.925,
+      "min_ms": 15.252,
+      "max_ms": 33.442,
+      "stdev_ms": 4.594
+     },
+     "canvas_physical": [
+      640,
+      320
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 126.088,
+      "mean_ms": 145.628,
+      "min_ms": 104.882,
+      "max_ms": 664.26,
+      "stdev_ms": 97.946
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 97.193,
+      "mean_ms": 100.664,
+      "min_ms": 82.319,
+      "max_ms": 134.766,
+      "stdev_ms": 15.277
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 24.42,
+      "mean_ms": 25.858,
+      "min_ms": 21.367,
+      "max_ms": 34.804,
+      "stdev_ms": 3.966
+     },
+     "canvas_physical": [
+      1280,
+      640
+     ]
+    }
+   }
+  },
+  {
+   "id": "text-09_text_dots",
+   "ops": 507,
+   "canvas": [
+    640,
+    400
+   ],
+   "op_types": {
+    "Circle": 504,
+    "Text": 2,
+    "Clear": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 18.278,
+     "mean_ms": 18.998,
+     "min_ms": 16.133,
+     "max_ms": 27.419,
+     "stdev_ms": 2.921,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": true
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 27.479,
+     "mean_ms": 28.863,
+     "min_ms": 21.039,
+     "max_ms": 39.588,
+     "stdev_ms": 5.773,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 55.395,
+      "mean_ms": 66.015,
+      "min_ms": 49.809,
+      "max_ms": 240.505,
+      "stdev_ms": 33.943
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 35.055,
+      "mean_ms": 36.954,
+      "min_ms": 31.604,
+      "max_ms": 53.83,
+      "stdev_ms": 5.392
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 19.743,
+      "mean_ms": 22.066,
+      "min_ms": 17.432,
+      "max_ms": 41.816,
+      "stdev_ms": 5.824
+     },
+     "canvas_physical": [
+      640,
+      400
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 61.695,
+      "mean_ms": 84.694,
+      "min_ms": 52.827,
+      "max_ms": 743.575,
+      "stdev_ms": 122.49
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 36.187,
+      "mean_ms": 37.072,
+      "min_ms": 31.127,
+      "max_ms": 51.223,
+      "stdev_ms": 4.548
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 23.014,
+      "mean_ms": 23.986,
+      "min_ms": 20.338,
+      "max_ms": 32.844,
+      "stdev_ms": 3.004
+     },
+     "canvas_physical": [
+      1280,
+      800
+     ]
+    }
+   }
+  },
+  {
+   "id": "randomness-03_noise",
+   "ops": 419,
+   "canvas": [
+    640,
+    400
+   ],
+   "op_types": {
+    "Rect": 416,
+    "Clear": 1,
+    "FillPath": 1,
+    "StrokePath": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 2.823,
+     "mean_ms": 2.854,
+     "min_ms": 2.702,
+     "max_ms": 3.134,
+     "stdev_ms": 0.113,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": true
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 4.712,
+     "mean_ms": 5.184,
+     "min_ms": 4.076,
+     "max_ms": 10.067,
+     "stdev_ms": 1.309,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 36.293,
+      "mean_ms": 42.871,
+      "min_ms": 31.088,
+      "max_ms": 181.195,
+      "stdev_ms": 26.566
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 30.795,
+      "mean_ms": 33.072,
+      "min_ms": 26.922,
+      "max_ms": 53.172,
+      "stdev_ms": 6.604
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 3.752,
+      "mean_ms": 4.158,
+      "min_ms": 3.395,
+      "max_ms": 6.826,
+      "stdev_ms": 0.889
+     },
+     "canvas_physical": [
+      640,
+      400
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 32.754,
+      "mean_ms": 56.752,
+      "min_ms": 31.862,
+      "max_ms": 676.25,
+      "stdev_ms": 115.226
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 27.296,
+      "mean_ms": 29.52,
+      "min_ms": 26.624,
+      "max_ms": 48.693,
+      "stdev_ms": 5.678
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 4.979,
+      "mean_ms": 5.292,
+      "min_ms": 4.784,
+      "max_ms": 8.847,
+      "stdev_ms": 0.899
+     },
+     "canvas_physical": [
+      1280,
+      800
+     ]
+    }
+   }
+  },
+  {
+   "id": "sound-02_write_a_tune",
+   "ops": 413,
+   "canvas": [
+    640,
+    400
+   ],
+   "op_types": {
+    "Line": 400,
+    "Rect": 11,
+    "Clear": 1,
+    "Text": 1
+   },
+   "time_dependent": true,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 8.792,
+     "mean_ms": 10.28,
+     "min_ms": 7.206,
+     "max_ms": 14.459,
+     "stdev_ms": 2.827,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": true
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 10.76,
+     "mean_ms": 12.099,
+     "min_ms": 9.752,
+     "max_ms": 17.781,
+     "stdev_ms": 2.474,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 168.221,
+      "mean_ms": 177.375,
+      "min_ms": 151.45,
+      "max_ms": 375.188,
+      "stdev_ms": 40.514
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 159.1,
+      "mean_ms": 162.341,
+      "min_ms": 143.486,
+      "max_ms": 204.53,
+      "stdev_ms": 17.103
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 8.111,
+      "mean_ms": 8.386,
+      "min_ms": 6.934,
+      "max_ms": 13.587,
+      "stdev_ms": 1.278
+     },
+     "canvas_physical": [
+      640,
+      400
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 162.608,
+      "mean_ms": 196.077,
+      "min_ms": 150.062,
+      "max_ms": 930.623,
+      "stdev_ms": 137.985
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 151.254,
+      "mean_ms": 161.1,
+      "min_ms": 138.906,
+      "max_ms": 223.346,
+      "stdev_ms": 23.015
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 10.952,
+      "mean_ms": 11.185,
+      "min_ms": 9.597,
+      "max_ms": 17.143,
+      "stdev_ms": 1.481
+     },
+     "canvas_physical": [
+      1280,
+      800
+     ]
+    }
+   }
+  },
+  {
+   "id": "randomness-02_gaussian_and_choice",
+   "ops": 401,
+   "canvas": [
+    640,
+    400
+   ],
+   "op_types": {
+    "Circle": 400,
+    "Clear": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 7.866,
+     "mean_ms": 9.035,
+     "min_ms": 6.618,
+     "max_ms": 14.008,
+     "stdev_ms": 2.359,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": true
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 11.081,
+     "mean_ms": 11.107,
+     "min_ms": 10.645,
+     "max_ms": 11.739,
+     "stdev_ms": 0.328,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 27.98,
+      "mean_ms": 34.229,
+      "min_ms": 24.448,
+      "max_ms": 185.626,
+      "stdev_ms": 28.622
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 18.247,
+      "mean_ms": 19.601,
+      "min_ms": 16.528,
+      "max_ms": 38.3,
+      "stdev_ms": 4.125
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 8.169,
+      "mean_ms": 8.545,
+      "min_ms": 7.293,
+      "max_ms": 14.857,
+      "stdev_ms": 1.526
+     },
+     "canvas_physical": [
+      640,
+      400
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 29.675,
+      "mean_ms": 53.913,
+      "min_ms": 28.155,
+      "max_ms": 741.611,
+      "stdev_ms": 127.716
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 17.193,
+      "mean_ms": 17.659,
+      "min_ms": 16.343,
+      "max_ms": 25.452,
+      "stdev_ms": 1.839
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 11.918,
+      "mean_ms": 12.165,
+      "min_ms": 10.901,
+      "max_ms": 19.234,
+      "stdev_ms": 1.432
+     },
+     "canvas_physical": [
+      1280,
+      800
+     ]
+    }
+   }
+  },
+  {
+   "id": "studios-03_rhythm",
+   "ops": 371,
+   "canvas": [
+    842,
+    595
+   ],
+   "op_types": {
+    "Save": 72,
+    "Concat": 72,
+    "Rect": 72,
+    "Circle": 72,
+    "Restore": 72,
+    "Line": 5
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 8.758,
+     "mean_ms": 9.373,
+     "min_ms": 6.563,
+     "max_ms": 13.011,
+     "stdev_ms": 2.497,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 0.67227,
+     "replay_equals_final_frame": false
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 8.342,
+     "mean_ms": 8.385,
+     "min_ms": 7.961,
+     "max_ms": 8.969,
+     "stdev_ms": 0.228,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 1.34454
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "script",
+     "frame": {
+      "n": 10,
+      "median_ms": 364.356,
+      "mean_ms": 368.706,
+      "min_ms": 312.636,
+      "max_ms": 475.016,
+      "stdev_ms": 43.046
+     },
+     "note": "whole script run incl. 30-frame request ignored"
+    },
+    "2x": {
+     "mode": "script",
+     "frame": {
+      "n": 10,
+      "median_ms": 1287.864,
+      "mean_ms": 1321.025,
+      "min_ms": 1227.149,
+      "max_ms": 1567.205,
+      "stdev_ms": 93.751
+     },
+     "note": "whole script run incl. 30-frame request ignored"
+    }
+   }
+  },
+  {
+   "id": "studios-05_text_as_geometry",
+   "ops": 290,
+   "canvas": [
+    420,
+    595
+   ],
+   "op_types": {
+    "Circle": 278,
+    "Save": 3,
+    "Concat": 3,
+    "Restore": 3,
+    "FillPath": 2,
+    "Clear": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 4.521,
+     "mean_ms": 4.695,
+     "min_ms": 3.988,
+     "max_ms": 7.002,
+     "stdev_ms": 0.718,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 0.67227,
+     "replay_equals_final_frame": false
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 6.318,
+     "mean_ms": 6.575,
+     "min_ms": 5.694,
+     "max_ms": 9.614,
+     "stdev_ms": 0.997,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 1.34454
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "script",
+     "frame": {
+      "n": 10,
+      "median_ms": 171.825,
+      "mean_ms": 183.067,
+      "min_ms": 163.689,
+      "max_ms": 247.737,
+      "stdev_ms": 25.455
+     },
+     "note": "whole script run incl. 30-frame request ignored"
+    },
+    "2x": {
+     "mode": "script",
+     "frame": {
+      "n": 10,
+      "median_ms": 662.924,
+      "mean_ms": 678.282,
+      "min_ms": 643.158,
+      "max_ms": 752.465,
+      "stdev_ms": 35.291
+     },
+     "note": "whole script run incl. 30-frame request ignored"
+    }
+   }
+  },
+  {
+   "id": "paths-06_outlines",
+   "ops": 249,
+   "canvas": [
+    640,
+    400
+   ],
+   "op_types": {
+    "Circle": 225,
+    "FillPath": 16,
+    "StrokePath": 3,
+    "Text": 3,
+    "Clear": 1,
+    "Rect": 1
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 14.056,
+     "mean_ms": 14.908,
+     "min_ms": 10.697,
+     "max_ms": 22.444,
+     "stdev_ms": 3.853,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 1.0,
+     "replay_equals_final_frame": true
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 19.239,
+     "mean_ms": 21.159,
+     "min_ms": 17.084,
+     "max_ms": 35.943,
+     "stdev_ms": 4.397,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 2.0
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 43.936,
+      "mean_ms": 51.469,
+      "min_ms": 32.798,
+      "max_ms": 211.536,
+      "stdev_ms": 31.947
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 25.135,
+      "mean_ms": 27.579,
+      "min_ms": 19.672,
+      "max_ms": 49.973,
+      "stdev_ms": 8.166
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 15.56,
+      "mean_ms": 17.486,
+      "min_ms": 12.063,
+      "max_ms": 28.676,
+      "stdev_ms": 4.575
+     },
+     "canvas_physical": [
+      640,
+      400
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 37.904,
+      "mean_ms": 58.17,
+      "min_ms": 36.437,
+      "max_ms": 641.304,
+      "stdev_ms": 108.292
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 19.504,
+      "mean_ms": 19.719,
+      "min_ms": 18.69,
+      "max_ms": 22.727,
+      "stdev_ms": 0.852
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 17.744,
+      "mean_ms": 17.772,
+      "min_ms": 16.821,
+      "max_ms": 19.202,
+      "stdev_ms": 0.542
+     },
+     "canvas_physical": [
+      1280,
+      800
+     ]
+    }
+   }
+  },
+  {
+   "id": "studios-06_poster_series",
+   "ops": 229,
+   "canvas": [
+    595,
+    842
+   ],
+   "op_types": {
+    "Circle": 64,
+    "Save": 48,
+    "Restore": 48,
+    "Concat": 36,
+    "Text": 12,
+    "ClipPath": 8
+   },
+   "time_dependent": false,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 36.625,
+     "mean_ms": 39.909,
+     "min_ms": 26.901,
+     "max_ms": 69.945,
+     "stdev_ms": 11.435,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 0.47506,
+     "replay_equals_final_frame": false
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 41.808,
+     "mean_ms": 45.285,
+     "min_ms": 33.707,
+     "max_ms": 78.128,
+     "stdev_ms": 10.454,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 0.95012
+    }
+   },
+   "full_frame": {
+    "1x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 51.161,
+      "mean_ms": 67.043,
+      "min_ms": 38.792,
+      "max_ms": 478.864,
+      "stdev_ms": 77.2
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 10.26,
+      "mean_ms": 11.993,
+      "min_ms": 8.406,
+      "max_ms": 21.131,
+      "stdev_ms": 3.385
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 37.504,
+      "mean_ms": 40.408,
+      "min_ms": 29.871,
+      "max_ms": 61.937,
+      "stdev_ms": 7.906
+     },
+     "canvas_physical": [
+      595,
+      842
+     ]
+    },
+    "2x": {
+     "mode": "loop",
+     "frames_run": 35,
+     "frame": {
+      "n": 30,
+      "median_ms": 48.271,
+      "mean_ms": 90.578,
+      "min_ms": 45.56,
+      "max_ms": 1297.021,
+      "stdev_ms": 224.069
+     },
+     "draw": {
+      "n": 30,
+      "median_ms": 8.759,
+      "mean_ms": 8.926,
+      "min_ms": 8.255,
+      "max_ms": 12.937,
+      "stdev_ms": 0.845
+     },
+     "render": {
+      "n": 30,
+      "median_ms": 39.346,
+      "mean_ms": 39.944,
+      "min_ms": 37.123,
+      "max_ms": 56.873,
+      "stdev_ms": 3.375
+     },
+     "canvas_physical": [
+      1190,
+      1684
+     ]
+    }
+   }
+  }
+ ],
+ "peak_replay": [
+  {
+   "id": "projects-05_typographic_portrait",
+   "canvas": [
+    600,
+    450
+   ],
+   "peak_frame_index": 0,
+   "ops": 1377,
+   "replay": {
+    "640x400": {
+     "n": 30,
+     "median_ms": 219.366,
+     "mean_ms": 234.576,
+     "min_ms": 165.897,
+     "max_ms": 327.045,
+     "stdev_ms": 53.497,
+     "surface": [
+      640,
+      400
+     ],
+     "scale": 0.88889
+    },
+    "1280x800": {
+     "n": 30,
+     "median_ms": 210.414,
+     "mean_ms": 225.194,
+     "min_ms": 183.949,
+     "max_ms": 362.751,
+     "stdev_ms": 46.29,
+     "surface": [
+      1280,
+      800
+     ],
+     "scale": 1.77778
+    }
+   }
+  }
+ ]
+}

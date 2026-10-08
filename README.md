@@ -20,6 +20,10 @@ Network: PyPI, GitHub, archive.ubuntu.com. 4 cores, ~6 GB disk. Every version/UR
 | 4 | `python3 -I scripts/check_wasm_imports.py dist/*.whl` and `scripts/wheel_sizes.sh` | Verifies that the side module imports nothing from cairo/pixman/png/zlib/Skia (only Python C-API, libc, libc++ and Emscripten runtime that Pyodide provides) and prints raw / gzip -9 / brotli -q 11 sizes. |
 | 5 | `node test/node/smoke.mjs` | Loads Pyodide from `PYODIDE_DIST` (default `/home/user/pyodide-dist/pyodide`, the unpacked 314.0.7 release; fetch with `FETCH_DIST=1 scripts/fetch_sources.sh`), installs every wheel in `dist/` with micropip from the local file system, draws with pycairo (PNG round trip, PDF, SVG, PS, recording surface), shapes "Hello" with uharfbuzz, and unions two rectangles with pathops. |
 
+### Run the tests in Node
+`scripts/run_node_tests.sh` (see `harness/README.md`) renders the Session-1 and gallery goldens and runs the bench in Pyodide under Node,
+for example `MODE=goldens OUT=results/pyodide scripts/run_node_tests.sh`. Results: `results/pyodide/SUMMARY.md`, `results/bench_comparison.md`.
+
 Sandbox invocation used here: `EMSDK_DIR=/home/user/emsdk VENV_DIR=/home/user/venv314 PYODIDE_XBUILDENV_PATH=/home/user/xbuildenv DOWNLOADS=/home/user/dl scripts/<step>.sh`.
 
 ## Jargon

@@ -8,3 +8,5 @@ dist/
 *.rgb
 results/**/diff*/
 .venv-native/
+!results/**/diff-samples/
+!results/**/diff-samples/*.png
