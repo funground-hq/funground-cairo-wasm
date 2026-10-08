@@ -1,0 +1,133 @@
+name: build
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      # Keep everything under the workspace (the scripts default to this; stated for clarity).
+      DOWNLOADS: ${{ github.workspace }}/downloads
+      EMSDK_DIR: ${{ github.workspace }}/build/emsdk
+      VENV_DIR: ${{ github.workspace }}/.venv314
+      PYODIDE_XBUILDENV_PATH: ${{ github.workspace }}/build/xbuildenv
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read pinned versions
+        run: |
+          set -euo pipefail
+          source scripts/versions.env
+          {
+            echo "EMSCRIPTEN_VERSION=$EMSCRIPTEN_VERSION"
+            echo "PYODIDE_VERSION=$PYODIDE_VERSION"
+            echo "SKIA_PATHOPS_VERSION=$SKIA_PATHOPS_VERSION"
+          } >> "$GITHUB_ENV"
+
+      - name: Install system build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            ninja-build pkg-config cmake make patch brotli xz-utils bzip2 curl git \
+            fonts-dejavu-core
+
+      # Host Python 3.14 must match Pyodide's; setup_toolchain.sh uses python3.14 when present
+      # (the runner's system Python 3.12 is externally managed, so its uv bootstrap would fail).
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # emcc version is re-checked by setup_toolchain.sh, so a stale cache cannot mask a mismatch.
+      - name: Cache emsdk
+        uses: actions/cache@v4
+        with:
+          path: build/emsdk
+          key: emsdk-${{ runner.os }}-${{ env.EMSCRIPTEN_VERSION }}
+
+      # Content-verified against sources.sha256 on every run by fetch_sources.sh.
+      - name: Cache downloads
+        uses: actions/cache@v4
+        with:
+          path: downloads
+          key: downloads-${{ hashFiles('sources.sha256') }}
+
+      # Skia (libskia.a) is deliberately not cached: build_pathops_wasm.sh wipes and re-extracts
+      # its source tree and re-runs gn on every invocation, so a cached out dir cannot be reused.
+      # The cairo/pycairo build output is likewise never cached.
+
+      - name: Fetch sources (and Pyodide dist), verify sha256
+        run: FETCH_DIST=1 scripts/fetch_sources.sh
+
+      - name: Set up toolchain (emsdk, venv, pyodide-build, xbuildenv)
+        run: scripts/setup_toolchain.sh
+
+      - name: Build cairo libs and pycairo wheel
+        run: scripts/build_wasm.sh
+
+      - name: Build skia-pathops wheel
+        run: scripts/build_pathops_wasm.sh
+
+      - name: Fetch prebuilt uharfbuzz wheel
+        run: scripts/fetch_prebuilt_wheels.sh
+
+      - name: Check wheel imports
+        run: python3 -I scripts/check_wasm_imports.py dist/*.whl
+
+      - name: Wheel sizes
+        run: |
+          {
+            echo '### Wheel sizes'
+            echo '```'
+            scripts/wheel_sizes.sh
+            echo '```'
+          } | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Unpack Pyodide dist
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/pyodide-dist"
+          tar xjf "downloads/pyodide-${PYODIDE_VERSION}.tar.bz2" -C "$RUNNER_TEMP/pyodide-dist"
+          test -f "$RUNNER_TEMP/pyodide-dist/pyodide/pyodide.mjs"
+
+      - name: Node smoke test
+        env:
+          PYODIDE_DIST: ${{ runner.temp }}/pyodide-dist/pyodide
+          FONT_TTF: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+        run: node test/node/smoke.mjs
+
+      - name: Upload wheels
+        uses: actions/upload-artifact@v4
+        with:
+          name: wheels
+          path: dist/*.whl
+          if-no-files-found: error
+
+      - name: Upload build logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            build/**/meson-log.txt
+            build/**/config.log
+            build/**/configure.log
+            build/**/CMakeError.log
+            build/skia-wasm/*.log
+            build/skia-wasm/args.gn
+          if-no-files-found: ignore

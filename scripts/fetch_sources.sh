@@ -9,7 +9,7 @@ source scripts/versions.env
 DL="${DOWNLOADS:-downloads}"
 mkdir -p "$DL"
 
-urls=("$CAIRO_URL" "$PIXMAN_URL" "$LIBPNG_URL" "$ZLIB_URL" "$PYCAIRO_URL" "$XBUILDENV_URL")
+urls=("$CAIRO_URL" "$PIXMAN_URL" "$LIBPNG_URL" "$ZLIB_URL" "$PYCAIRO_URL" "$XBUILDENV_URL" "$SKIA_PATHOPS_URL")
 [ "${FETCH_DIST:-0}" = 1 ] && urls+=("$PYODIDE_DIST_URL")
 
 for url in "${urls[@]}"; do
