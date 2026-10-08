@@ -1,0 +1,3 @@
+# Prebuilt wheels fetched (not built) by scripts/fetch_prebuilt_wheels.sh into dist/.
+# Format: sha256  filename  url
+f602ccd6359da0b349396e24a03e7bba93b46f3df29e3ebbcf7d26f89f1e5e9b  uharfbuzz-0.56.3-cp310-abi3-pyemscripten_2026_0_wasm32.whl  https://files.pythonhosted.org/packages/b0/38/ab433adf99a79086c40cae85d2563411a6dcd6dca5832e9ede83b0a72078/uharfbuzz-0.56.3-cp310-abi3-pyemscripten_2026_0_wasm32.whl
