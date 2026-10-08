@@ -1,0 +1,29 @@
+# Meson cross file for the static C libraries (pixman, cairo). Rendered by scripts/build_wasm.sh,
+# which substitutes @CFLAGS@ / @LDFLAGS@ (as meson list items) so that exception and longjmp
+# handling matches the Pyodide main module (taken from `pyodide config get cflags`).
+# Link args deliberately omit -sSIDE_MODULE: configure-time link tests must produce normal
+# node-runnable programs; the side module is only created later, by pycairo's own build.
+[binaries]
+c = 'emcc'
+cpp = 'em++'
+ar = 'emar'
+ranlib = 'emranlib'
+strip = 'emstrip'
+pkg-config = 'pkg-config'
+exe_wrapper = 'node'
+
+[built-in options]
+c_args = @CFLAGS@
+cpp_args = @CFLAGS@
+c_link_args = @LDFLAGS@
+cpp_link_args = @LDFLAGS@
+
+[properties]
+needs_exe_wrapper = true
+skip_sanity_check = true
+
+[host_machine]
+system = 'emscripten'
+cpu_family = 'wasm32'
+cpu = 'wasm'
+endian = 'little'

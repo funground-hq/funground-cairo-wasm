@@ -1,0 +1,2396 @@
+{
+ "funground": "/funground",
+ "frames": 30,
+ "entries": [
+  {
+   "id": "01_first_sketch",
+   "kind": "session1",
+   "source": "/funground/examples/session1/01_first_sketch.py",
+   "status": "ok",
+   "elapsed_s": 0.2323,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "5e2198f823e7e187b39ea703cb258b54f33100e13ef0818285e228c954a62092",
+   "file": "01_first_sketch.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "02_shapes",
+   "kind": "session1",
+   "source": "/funground/examples/session1/02_shapes.py",
+   "status": "ok",
+   "elapsed_s": 0.2168,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "72bf783e67ae07922c114b0ac8431da4e2c18fd812bd452445cd16f5eea48a5e",
+   "file": "02_shapes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "03_colors",
+   "kind": "session1",
+   "source": "/funground/examples/session1/03_colors.py",
+   "status": "ok",
+   "elapsed_s": 0.2297,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "67037c95f242ac763ce7df7ee5531b46937030980db823d922f25ead3892c35c",
+   "file": "03_colors.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "04_fill_stroke",
+   "kind": "session1",
+   "source": "/funground/examples/session1/04_fill_stroke.py",
+   "status": "ok",
+   "elapsed_s": 0.2527,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "380e279ec601fd6a7014fa9b09be654182f2de113d02c904b782eeea073520ca",
+   "file": "04_fill_stroke.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "05_text",
+   "kind": "session1",
+   "source": "/funground/examples/session1/05_text.py",
+   "status": "ok",
+   "elapsed_s": 0.5921,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "336015ebc64d1dc3bab953e2cbccc20b40d07a6a693f934356a90d36922d1346",
+   "file": "05_text.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 33,
+     "Face": 1,
+     "Font": 1,
+     "shape": 33
+    }
+   }
+  },
+  {
+   "id": "06_animation",
+   "kind": "session1",
+   "source": "/funground/examples/session1/06_animation.py",
+   "status": "ok",
+   "elapsed_s": 0.1616,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "cde7ea34cc49dc1ebb4a05b6e52fe7624f0547d58ed978de03180efbcf42a927",
+   "file": "06_animation.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "07_bounce",
+   "kind": "session1",
+   "source": "/funground/examples/session1/07_bounce.py",
+   "status": "ok",
+   "elapsed_s": 0.1605,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e68fe1f411280c3234c807400dbd84a3699fa19aa5d3806ed0128b8c90df39b3",
+   "file": "07_bounce.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "08_mouse",
+   "kind": "session1",
+   "source": "/funground/examples/session1/08_mouse.py",
+   "status": "ok",
+   "elapsed_s": 0.1703,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "8d2bb160d4bfe8850ea66e43f27311a97b2601b5b499759744eae8ed11e28fc1",
+   "file": "08_mouse.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "09_keyboard",
+   "kind": "session1",
+   "source": "/funground/examples/session1/09_keyboard.py",
+   "status": "ok",
+   "elapsed_s": 0.1822,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "3bb18097581cf91d20d3b525cedb6b2927e13c37aecb1830845adc5dead4646d",
+   "file": "09_keyboard.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "10_helpers",
+   "kind": "session1",
+   "source": "/funground/examples/session1/10_helpers.py",
+   "status": "ok",
+   "elapsed_s": 0.2487,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "957256c78d99ea3d5b0b7d4bbfe6cb01e7a6e58cdc15e75bb2e3378fe89fd0be",
+   "file": "10_helpers.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "12_default_window",
+   "kind": "session1",
+   "source": "/funground/examples/session1/12_default_window.py",
+   "status": "ok",
+   "elapsed_s": 0.213,
+   "size": [
+    640,
+    480
+   ],
+   "bytes": 921600,
+   "sha256": "8cc22aa4aa8746864d0190e4087803c1e0c6aad3e6ea3325c1fa29f436434b2c",
+   "file": "12_default_window.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "13_transforms",
+   "kind": "session1",
+   "source": "/funground/examples/session1/13_transforms.py",
+   "status": "ok",
+   "elapsed_s": 0.3164,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "2d4777aa7645732bf09668012746fdb9b5a4ccfea4528f3155143fae2c9cc32c",
+   "file": "13_transforms.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "14_paths",
+   "kind": "session1",
+   "source": "/funground/examples/session1/14_paths.py",
+   "status": "ok",
+   "elapsed_s": 0.3694,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "63bcfca14ef2257d711716530555fba3608741f7a23824a58074d666f483f0ce",
+   "file": "14_paths.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "basics-01_first_sketch",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/basics/01_first_sketch.py",
+   "status": "ok",
+   "elapsed_s": 0.1801,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "7179b0d4e930640794a31b8edce4726dd364e0047d607ad38a19d6474eca2609",
+   "file": "gallery/basics-01_first_sketch.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "basics-02_setup_and_draw",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/basics/02_setup_and_draw.py",
+   "status": "ok",
+   "elapsed_s": 0.3366,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "a9d1a450baa15e57eeb80909e608dffede377b8f6ff3e4d452e8548f215ce4b7",
+   "file": "gallery/basics-02_setup_and_draw.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 30,
+     "Face": 1,
+     "Font": 1,
+     "shape": 30
+    }
+   }
+  },
+  {
+   "id": "basics-03_a_script",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/basics/03_a_script.py",
+   "status": "ok",
+   "elapsed_s": 1.6422,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "955ed399a227df1b5fd9c354be63c36fb3314754732062bd94ea7d11daf9ef29",
+   "file": "gallery/basics-03_a_script.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 2,
+     "Face": 1,
+     "Font": 1,
+     "shape": 2
+    }
+   }
+  },
+  {
+   "id": "shapes-01_basic_shapes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/shapes/01_basic_shapes.py",
+   "status": "ok",
+   "elapsed_s": 0.2272,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "c62d3903409e24bf84195f572271773a2a708ef368556c5fe6647a54cd8d3048",
+   "file": "gallery/shapes-01_basic_shapes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "shapes-02_more_shapes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/shapes/02_more_shapes.py",
+   "status": "ok",
+   "elapsed_s": 0.4301,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "3f9863022613d0320fa37a041657e8e284ec0b5667ac4a73041525687cdf8333",
+   "file": "gallery/shapes-02_more_shapes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 3,
+     "Face": 1,
+     "Font": 1,
+     "shape": 3
+    }
+   }
+  },
+  {
+   "id": "shapes-03_modes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/shapes/03_modes.py",
+   "status": "ok",
+   "elapsed_s": 1.6098,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "b43e4a1e30ba858b5c5f0ce32202ff093c290064fdc7c5fca497d41bb9af1dc1",
+   "file": "gallery/shapes-03_modes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 16,
+     "Face": 1,
+     "Font": 1,
+     "shape": 16
+    }
+   }
+  },
+  {
+   "id": "shapes-04_rounded",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/shapes/04_rounded.py",
+   "status": "ok",
+   "elapsed_s": 0.7812,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "8b79a9fc91fb75108ef5aaddb7a967911459b5aa5b8f1f442ce2a99b44a2d7ed",
+   "file": "gallery/shapes-04_rounded.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    },
+    "pathops": {
+     "FillType": 60,
+     "Path": 60,
+     "PathOp": 30,
+     "op": 30
+    }
+   }
+  },
+  {
+   "id": "colour-01_colour_forms",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/colour/01_colour_forms.py",
+   "status": "ok",
+   "elapsed_s": 0.201,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "6eb3d4f4d78a5119ac765d8ddd934602dd93e78feb8941c4af6c4894d472b048",
+   "file": "gallery/colour-01_colour_forms.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "colour-02_hsb_and_hsl",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/colour/02_hsb_and_hsl.py",
+   "status": "ok",
+   "elapsed_s": 0.7201,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "72c530738d2f357644b7e61c0fa86f76336a71c5515cc27783fa228fc3dba744",
+   "file": "gallery/colour-02_hsb_and_hsl.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 2,
+     "Face": 1,
+     "Font": 1,
+     "shape": 2
+    }
+   }
+  },
+  {
+   "id": "colour-03_gradients",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/colour/03_gradients.py",
+   "status": "ok",
+   "elapsed_s": 0.3436,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e3544865d50101775cb70ad33b5df42c3d39fbfb17a189f56904ebd640d15684",
+   "file": "gallery/colour-03_gradients.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "colour-04_color_mode",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/colour/04_color_mode.py",
+   "status": "ok",
+   "elapsed_s": 0.7448,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e8e1a9f6059ff2587d8eb1a26743d6d427f1be90b794c16ad99bb837528e06d7",
+   "file": "gallery/colour-04_color_mode.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 3,
+     "Face": 1,
+     "Font": 1,
+     "shape": 3
+    }
+   }
+  },
+  {
+   "id": "compositing-01_blend_opacity_shadow",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/compositing/01_blend_opacity_shadow.py",
+   "status": "ok",
+   "elapsed_s": 1.4107,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "8b88bb826ea495578720eab87f2fa6cf397c88c8e1dc2394f41165feec37fe9a",
+   "file": "gallery/compositing-01_blend_opacity_shadow.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 126,
+     "Face": 1,
+     "Font": 1,
+     "shape": 126
+    }
+   }
+  },
+  {
+   "id": "compositing-02_graphics",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/compositing/02_graphics.py",
+   "status": "ok",
+   "elapsed_s": 0.4123,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "03da826bdd184c2b373bf01403122a9e056f6d359fa108fbd182b6dbc675d8e9",
+   "file": "gallery/compositing-02_graphics.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "compositing-03_scratch_card",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/compositing/03_scratch_card.py",
+   "status": "ok",
+   "elapsed_s": 0.3105,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "dc7ab9b196c35dee16ca0f9b879e3823b5d2a09558a7888496ba342e078a2106",
+   "file": "gallery/compositing-03_scratch_card.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 31,
+     "Face": 1,
+     "Font": 1,
+     "shape": 31
+    }
+   }
+  },
+  {
+   "id": "compositing-04_layers",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/compositing/04_layers.py",
+   "status": "ok",
+   "elapsed_s": 0.3432,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "b684cd170b50e9929cf0fe86eebe234c925513ea9dad3f9f253fc4f4b690470c",
+   "file": "gallery/compositing-04_layers.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "lines-01_fill_and_stroke",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/lines/01_fill_and_stroke.py",
+   "status": "ok",
+   "elapsed_s": 0.316,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e24aba23f3b92d53741e4e60807182d1c9c0d14b8d4a3bbfd7e91195fd3e368d",
+   "file": "gallery/lines-01_fill_and_stroke.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "lines-02_caps_joins_dashes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/lines/02_caps_joins_dashes.py",
+   "status": "ok",
+   "elapsed_s": 0.4932,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "eeb9a6e7418c99383c30f64e140a60f7172b5e5e77f846be1e5eabc581c8a3c3",
+   "file": "gallery/lines-02_caps_joins_dashes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 5,
+     "Face": 1,
+     "Font": 1,
+     "shape": 5
+    }
+   }
+  },
+  {
+   "id": "lines-03_pixel_art",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/lines/03_pixel_art.py",
+   "status": "ok",
+   "elapsed_s": 0.1985,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "48c23e87db76e7d156fc66258b9f5445438a8454829b954a562341d83c9ef963",
+   "file": "gallery/lines-03_pixel_art.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "curves-01_curves",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/curves/01_curves.py",
+   "status": "ok",
+   "elapsed_s": 0.2883,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e3123e6b74d699fa88d220eebcbbcc30ca7f63981fa19c91271a8bdc833213af",
+   "file": "gallery/curves-01_curves.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "text-01_text",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/01_text.py",
+   "status": "ok",
+   "elapsed_s": 0.6951,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "7479478d38bbab856e5ed972fde607cdc953b7ab20fedc20d5b714cca82d5119",
+   "file": "gallery/text-01_text.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 63,
+     "Face": 1,
+     "Font": 1,
+     "shape": 63
+    }
+   }
+  },
+  {
+   "id": "text-02_align",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/02_align.py",
+   "status": "ok",
+   "elapsed_s": 1.191,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "6ec618a8f72828bda7e65052d6be3c000dcd3d873e9848beed8ebc3e83220d54",
+   "file": "gallery/text-02_align.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 253,
+     "Face": 1,
+     "Font": 1,
+     "shape": 253
+    }
+   }
+  },
+  {
+   "id": "text-03_text_box",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/03_text_box.py",
+   "status": "ok",
+   "elapsed_s": 2.6113,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "06a1c1ce522f311c8d82c2cbf0e19ae5fe1aae5d8d1fdfef4acb857415e9f69d",
+   "file": "gallery/text-03_text_box.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 4308,
+     "Face": 1,
+     "Font": 1,
+     "shape": 4308
+    }
+   }
+  },
+  {
+   "id": "text-04_fonts",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/04_fonts.py",
+   "status": "ok",
+   "elapsed_s": 1.0048,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "0800a03a074b662970cb71906f10c41dad7e62a062a6e71dcf685b7ba9066b9d",
+   "file": "gallery/text-04_fonts.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 6,
+     "Face": 5,
+     "Font": 5,
+     "shape": 6
+    }
+   }
+  },
+  {
+   "id": "text-05_text_path",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/05_text_path.py",
+   "status": "ok",
+   "elapsed_s": 0.8364,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "ee4e853cf8364834408fb675b031484d2c486e182ca02460a8312e01bdb77463",
+   "file": "gallery/text-05_text_path.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 273,
+     "Face": 2,
+     "Font": 2,
+     "shape": 273
+    },
+    "pathops": {
+     "FillType": 420,
+     "Path": 390,
+     "PathOp": 180,
+     "op": 180,
+     "simplify": 30
+    }
+   }
+  },
+  {
+   "id": "text-06_tracking_and_features",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/06_tracking_and_features.py",
+   "status": "ok",
+   "elapsed_s": 0.75,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "0d62ccedf19450dec06bff10319abf93741ae8e6ee4b65ddab9f962421922c0f",
+   "file": "gallery/text-06_tracking_and_features.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 45,
+     "Face": 1,
+     "Font": 1,
+     "shape": 45
+    }
+   }
+  },
+  {
+   "id": "text-07_formatted",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/07_formatted.py",
+   "status": "ok",
+   "elapsed_s": 2.255,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "891481fdb30be6ab01934b7f695ebf09b5759c57cce320ac2841af0eaf12c435",
+   "file": "gallery/text-07_formatted.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 5183,
+     "Face": 4,
+     "Font": 4,
+     "shape": 5183
+    }
+   }
+  },
+  {
+   "id": "text-08_variations",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/08_variations.py",
+   "status": "ok",
+   "elapsed_s": 0.7202,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "5d6ea4234ae52aeac6d84f05d30078498ac30d993656c0ecf73ebafd492f6202",
+   "file": "gallery/text-08_variations.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 5,
+     "Face": 1,
+     "Font": 1,
+     "shape": 5
+    }
+   }
+  },
+  {
+   "id": "text-09_text_dots",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/09_text_dots.py",
+   "status": "ok",
+   "elapsed_s": 1.6501,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "67dcb9d3852a089000e0b2423899e8ec8098078c9ef3e90811319a6563b72fe2",
+   "file": "gallery/text-09_text_dots.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 182,
+     "Face": 2,
+     "Font": 2,
+     "shape": 182
+    }
+   }
+  },
+  {
+   "id": "text-10_fallback",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/text/10_fallback.py",
+   "status": "ok",
+   "elapsed_s": 0.9879,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "eef80302489a3a1e4ce100ed2beaee1f2cd027e460b8d93cd23f0d53501eb139",
+   "file": "gallery/text-10_fallback.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 616,
+     "Face": 4,
+     "Font": 4,
+     "shape": 616
+    }
+   }
+  },
+  {
+   "id": "animation-01_bounce",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/animation/01_bounce.py",
+   "status": "ok",
+   "elapsed_s": 0.202,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "d71acc9d45c28980db19b47f36ded1d3aaebf37f36d4b2d97b7773706c3592de",
+   "file": "gallery/animation-01_bounce.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "animation-04_pause",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/animation/04_pause.py",
+   "status": "ok",
+   "elapsed_s": 0.4442,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "75725363a98516796a9ac87cc7ed0fee9957b2239b2110645d1dbd112bcb422b",
+   "file": "gallery/animation-04_pause.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "animation-05_record_a_gif",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/animation/05_record_a_gif.py",
+   "status": "ok",
+   "elapsed_s": 0.1385,
+   "size": [
+    240,
+    240
+   ],
+   "bytes": 172800,
+   "sha256": "40411401ae818017350ca083525c68d54ff8002a859a13dfc9ad87740b48573e",
+   "file": "gallery/animation-05_record_a_gif.rgb",
+   "imports": [
+    "PIL",
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "motion-01_movers",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/motion/01_movers.py",
+   "status": "ok",
+   "elapsed_s": 0.2202,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "20d6f242b73b3cad0bfb7436ad87f0dcb3a73eb99ac3b4f2bb433f1e67bb4d5c",
+   "file": "gallery/motion-01_movers.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "transforms-01_rotating_squares",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/transforms/01_rotating_squares.py",
+   "status": "ok",
+   "elapsed_s": 0.2266,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "c46876a6ef186a2272b4117774afa680442eabf7d2f33761dca0166235793589",
+   "file": "gallery/transforms-01_rotating_squares.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "transforms-02_saved_state",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/transforms/02_saved_state.py",
+   "status": "ok",
+   "elapsed_s": 0.4554,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "f3057094c402ab77df78307857a7029bba6c69297111c4b0d724df31f5b01f69",
+   "file": "gallery/transforms-02_saved_state.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "transforms-03_shear_and_matrices",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/transforms/03_shear_and_matrices.py",
+   "status": "ok",
+   "elapsed_s": 0.5362,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "262514f24b5ab7d563b08c38801c340f85924f2104ab7a9e329fac4e06386b97",
+   "file": "gallery/transforms-03_shear_and_matrices.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "paths-01_star",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/01_star.py",
+   "status": "ok",
+   "elapsed_s": 0.2252,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "6ac10bc91452bb16addb8ac7827659e6f5cfea8fc4f3f0aa07e43deb2251ca2e",
+   "file": "gallery/paths-01_star.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "paths-02_path_and_clip",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/02_path_and_clip.py",
+   "status": "ok",
+   "elapsed_s": 0.2551,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e48c8b97a65159fd74b7afe91a686d7a99cd8da97c2e5e3792edec6f471edbda",
+   "file": "gallery/paths-02_path_and_clip.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "paths-03_no_clip",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/03_no_clip.py",
+   "status": "ok",
+   "elapsed_s": 0.2293,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "923acc5001bf8264f0a5f195838f337e4e489ee954680bee2db2a86c3b789d72",
+   "file": "gallery/paths-03_no_clip.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "paths-04_holes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/04_holes.py",
+   "status": "ok",
+   "elapsed_s": 0.2324,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "178507d8f0b6a1321bafd58daff393c10d5ab22d99c5d68468887588224133a0",
+   "file": "gallery/paths-04_holes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "paths-05_booleans",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/05_booleans.py",
+   "status": "ok",
+   "elapsed_s": 0.8731,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "5fc52c7dc8da9c7db91e740e3b3b62a68c6c0766138c8cd6cdfe8f59f1ea6a49",
+   "file": "gallery/paths-05_booleans.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 186,
+     "Face": 1,
+     "Font": 1,
+     "shape": 186
+    },
+    "pathops": {
+     "FillType": 990,
+     "Path": 990,
+     "PathOp": 480,
+     "op": 480,
+     "simplify": 30
+    }
+   }
+  },
+  {
+   "id": "paths-06_outlines",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/paths/06_outlines.py",
+   "status": "ok",
+   "elapsed_s": 1.244,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "0c27f1932458f73bc1fab0e7362a0933f82e444c395271d240b4545cefee2d31",
+   "file": "gallery/paths-06_outlines.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 93,
+     "Face": 1,
+     "Font": 1,
+     "shape": 93
+    },
+    "pathops": {
+     "FillType": 7020,
+     "Path": 6930,
+     "PathOp": 30,
+     "op": 30,
+     "simplify": 90
+    }
+   }
+  },
+  {
+   "id": "randomness-01_confetti",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/randomness/01_confetti.py",
+   "status": "ok",
+   "elapsed_s": 0.5699,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "86563757a4a8c3d19f753d0df697dfa42cb63b9fc8a377dd909daaf5c22da62a",
+   "file": "gallery/randomness-01_confetti.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "randomness-02_gaussian_and_choice",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/randomness/02_gaussian_and_choice.py",
+   "status": "ok",
+   "elapsed_s": 0.8934,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "5e79273d983a0ef92a3a3dd8c97d5fc2ec4eff68d82e560166ea743e8d9726dc",
+   "file": "gallery/randomness-02_gaussian_and_choice.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "randomness-03_noise",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/randomness/03_noise.py",
+   "status": "ok",
+   "elapsed_s": 1.0817,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "caa833cc0242012745aaee46152854528c32b80c42e248ab92e0439f927e8910",
+   "file": "gallery/randomness-03_noise.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "maths-01_map_and_lerp",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/maths/01_map_and_lerp.py",
+   "status": "ok",
+   "elapsed_s": 0.4057,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "c32901b86412efb841408a4adbfc59a8541f84fe255c47f6e5e2f47be7819a87",
+   "file": "gallery/maths-01_map_and_lerp.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "interaction-01_follow_the_mouse",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/interaction/01_follow_the_mouse.py",
+   "status": "ok",
+   "elapsed_s": 0.3928,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "bd931038222f04091cc936b18e96b1f1c6784d658c964e45ebfb9db192b98eae",
+   "file": "gallery/interaction-01_follow_the_mouse.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "interaction-02_paint",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/interaction/02_paint.py",
+   "status": "ok",
+   "elapsed_s": 0.4415,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "c544f65b5a79b8b02e27de64097bc7ff28eb1425207663e3afc994545423e914",
+   "file": "gallery/interaction-02_paint.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "interaction-03_keyboard_mover",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/interaction/03_keyboard_mover.py",
+   "status": "ok",
+   "elapsed_s": 0.4252,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "8a9bc3e8216629d701d2df96d375cf7c09eb1ed17a7764b42376fcd2a6db51e0",
+   "file": "gallery/interaction-03_keyboard_mover.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "interaction-04_window",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/interaction/04_window.py",
+   "status": "ok",
+   "elapsed_s": 0.4374,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "6d8a9ffaae9f62f882364d51af2756289e01b5979158eb308f361c81c3b12700",
+   "file": "gallery/interaction-04_window.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 32,
+     "Face": 1,
+     "Font": 1,
+     "shape": 32
+    }
+   }
+  },
+  {
+   "id": "interaction-05_controls",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/interaction/05_controls.py",
+   "status": "ok",
+   "elapsed_s": 0.1764,
+   "size": [
+    480,
+    360
+   ],
+   "bytes": 518400,
+   "sha256": "503b9e9d9c8185e25ae3db0741bbedd541e94a0eba0c26308ce8e8bcd8224eb0",
+   "file": "gallery/interaction-05_controls.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "saving-01_save_a_picture",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/saving/01_save_a_picture.py",
+   "status": "ok",
+   "elapsed_s": 0.5773,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "124f0fb06e717981503a6af955f6d9f586e9284f2abce72adc5ea9fa95a2284e",
+   "file": "gallery/saving-01_save_a_picture.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 2,
+     "Face": 1,
+     "Font": 1,
+     "shape": 2
+    }
+   }
+  },
+  {
+   "id": "saving-02_transparent_png",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/saving/02_transparent_png.py",
+   "status": "ok",
+   "elapsed_s": 0.3332,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "9b224c99b2e01f76d746a906f0f4b6cbd7f41405f1886b2c11f9b507419c2416",
+   "file": "gallery/saving-02_transparent_png.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "saving-03_save_frames",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/saving/03_save_frames.py",
+   "status": "ok",
+   "elapsed_s": 0.7526,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "2c8f31fb0bdaf87821641452710e904a91e352a9977c7754251d50e60a9bd30b",
+   "file": "gallery/saving-03_save_frames.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "saving-04_poster_file",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/saving/04_poster_file.py",
+   "status": "ok",
+   "elapsed_s": 1.8672,
+   "size": [
+    480,
+    640
+   ],
+   "bytes": 921600,
+   "sha256": "19cde0be3f30077ce52822b18b831a26d3de1ffe91bf3a4ac41e246deffeb091",
+   "file": "gallery/saving-04_poster_file.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 29,
+     "Face": 4,
+     "Font": 4,
+     "shape": 29
+    }
+   }
+  },
+  {
+   "id": "documents-01_booklet",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/documents/01_booklet.py",
+   "status": "ok",
+   "elapsed_s": 0.6011,
+   "size": [
+    595,
+    420
+   ],
+   "bytes": 749700,
+   "sha256": "17be0cf4a5ed93451ed8c9f2c1084e1eab0cfa47db24504d4a4199dc70d99dcc",
+   "file": "gallery/documents-01_booklet.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 92,
+     "Face": 1,
+     "Font": 1,
+     "shape": 92
+    }
+   }
+  },
+  {
+   "id": "documents-02_flip_book",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/documents/02_flip_book.py",
+   "status": "ok",
+   "elapsed_s": 0.4558,
+   "size": [
+    320,
+    240
+   ],
+   "bytes": 230400,
+   "sha256": "bf050a0dbf452243fed000aa8f27ede9203f160d439faf44d040aee228e817ef",
+   "file": "gallery/documents-02_flip_book.rgb",
+   "imports": [
+    "PIL",
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pypdf",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "images-01_load_image",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/images/01_load_image.py",
+   "status": "ok",
+   "elapsed_s": 0.5012,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "4e7b9cf1331131592fdee095843966c629820e80331b297c5355279f7a8fdbec",
+   "file": "gallery/images-01_load_image.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 3,
+     "Face": 1,
+     "Font": 1,
+     "shape": 3
+    }
+   }
+  },
+  {
+   "id": "images-02_tint_and_parts",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/images/02_tint_and_parts.py",
+   "status": "ok",
+   "elapsed_s": 0.9031,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "4e75c26deb1a547a072014f20cada6d78d34d7a44438c6e482207cb92d9c0202",
+   "file": "gallery/images-02_tint_and_parts.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 6,
+     "Face": 1,
+     "Font": 1,
+     "shape": 6
+    }
+   }
+  },
+  {
+   "id": "images-03_pixels",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/images/03_pixels.py",
+   "status": "ok",
+   "elapsed_s": 0.4004,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "dd78165e9c2d93b675da6c25a45c0fcd1f1fdfe82f09f2aace13935446568623",
+   "file": "gallery/images-03_pixels.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 5,
+     "Face": 1,
+     "Font": 1,
+     "shape": 5
+    }
+   }
+  },
+  {
+   "id": "images-04_filters",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/images/04_filters.py",
+   "status": "ok",
+   "elapsed_s": 0.693,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "e74985a72d76724041a2e93f824626378b053dfe74799e3a1af09d4a59667ec4",
+   "file": "gallery/images-04_filters.rgb",
+   "imports": [
+    "PIL",
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 12,
+     "Face": 1,
+     "Font": 1,
+     "shape": 12
+    }
+   }
+  },
+  {
+   "id": "images-05_svg",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/images/05_svg.py",
+   "status": "ok",
+   "elapsed_s": 0.7447,
+   "size": [
+    640,
+    400
+   ],
+   "bytes": 768000,
+   "sha256": "c20c3bce58ccd8217f489c487ab05fc5f7f04d8e74a12bfe536f15fa41add21d",
+   "file": "gallery/images-05_svg.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "svgelements",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 4,
+     "Face": 1,
+     "Font": 1,
+     "shape": 4
+    },
+    "pathops": {
+     "FillType": 64,
+     "Path": 62,
+     "PathOp": 30,
+     "op": 30,
+     "simplify": 2
+    }
+   }
+  },
+  {
+   "id": "music-07_a_songs_fingerprint",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/music/07_a_songs_fingerprint.py",
+   "status": "error",
+   "elapsed_s": 0.8435,
+   "error": "ValueError: f.melody(): sound support is not available on this computer",
+   "traceback": "Traceback (most recent call last):\n  File \"/repo/harness/render_goldens.py\", line 49, in _record\n    (w, h), data = runner(path, frames=frames)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/harness/fgrun.py\", line 101, in run_sketch\n    exec(compile(source, str(path), \"exec\"), namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/examples/gallery/music/07_a_songs_fingerprint.py\", line 35, in <module>\n    song = f.mix(f.melody(LEAD, tempo=TEMPO),\n                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/api.py\", line 2778, in melody\n    return sound.make(values, _sound_frame, \"f.melody()\")\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/sound.py\", line 991, in make\n    return _from_samples(values, synth.RATE, frame_source, who)\n  File \"/funground/funground/sound.py\", line 116, in _from_samples\n    mixer = _open_mixer(headless, who)\n  File \"/funground/funground/sound.py\", line 74, in _open_mixer\n    raise ValueError(f\"{who}: sound support is not available on this computer\")\nValueError: f.melody(): sound support is not available on this computer\n",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "music-10_ear_training",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/music/10_ear_training.py",
+   "status": "error",
+   "elapsed_s": 0.2012,
+   "error": "ValueError: f.melody(): sound support is not available on this computer",
+   "traceback": "Traceback (most recent call last):\n  File \"/repo/harness/render_goldens.py\", line 49, in _record\n    (w, h), data = runner(path, frames=frames)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/harness/fgrun.py\", line 101, in run_sketch\n    exec(compile(source, str(path), \"exec\"), namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/examples/gallery/music/10_ear_training.py\", line 284, in <module>\n    f.run()\n    ~~~~~^^\n  File \"/repo/harness/fgrun.py\", line 93, in harness_run\n    api.active_sketch().run_namespace(caller.f_globals, fps=fps, max_frames=max_frames)\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/sketch.py\", line 2166, in run_namespace\n    setup()\n    ~~~~~^^\n  File \"/funground/examples/gallery/music/10_ear_training.py\", line 193, in setup\n    new_question()\n    ~~~~~~~~~~~~^^\n  File \"/funground/examples/gallery/music/10_ear_training.py\", line 86, in new_question\n    play_question()\n    ~~~~~~~~~~~~~^^\n  File \"/funground/examples/gallery/music/10_ear_training.py\", line 95, in play_question\n    sound = f.melody(words, tempo=90, sa=SA, tuning=\"just\").reverb(0.15)\n            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/api.py\", line 2778, in melody\n    return sound.make(values, _sound_frame, \"f.melody()\")\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/sound.py\", line 991, in make\n    return _from_samples(values, synth.RATE, frame_source, who)\n  File \"/funground/funground/sound.py\", line 116, in _from_samples\n    mixer = _open_mixer(headless, who)\n  File \"/funground/funground/sound.py\", line 74, in _open_mixer\n    raise ValueError(f\"{who}: sound support is not available on this computer\")\nValueError: f.melody(): sound support is not available on this computer\n",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "projects-01_event_posters",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/01_event_posters.py",
+   "status": "ok",
+   "elapsed_s": 0.5885,
+   "size": [
+    480,
+    680
+   ],
+   "bytes": 979200,
+   "sha256": "c223aa258d6c461624863d2e5eed84023b5fdafd50105b5497b73a64a2958d6b",
+   "file": "gallery/projects-01_event_posters.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 27,
+     "Face": 6,
+     "Font": 6,
+     "shape": 27
+    },
+    "pathops": {
+     "FillType": 6,
+     "Path": 6,
+     "PathOp": 3,
+     "op": 3
+    }
+   }
+  },
+  {
+   "id": "projects-02_rangoli",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/02_rangoli.py",
+   "status": "ok",
+   "elapsed_s": 1.1011,
+   "size": [
+    560,
+    620
+   ],
+   "bytes": 1041600,
+   "sha256": "047839909a71298adac790a984b7aea334d10cbb16f6788a08cf5fdfe42069b0",
+   "file": "gallery/projects-02_rangoli.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 2,
+     "Face": 1,
+     "Font": 1,
+     "shape": 2
+    },
+    "pathops": {
+     "FillType": 1260,
+     "Path": 1260,
+     "PathOp": 630,
+     "op": 630
+    }
+   }
+  },
+  {
+   "id": "projects-03_raga_explorer",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/03_raga_explorer.py",
+   "status": "ok",
+   "elapsed_s": 1.8122,
+   "size": [
+    720,
+    470
+   ],
+   "bytes": 1015200,
+   "sha256": "d7c7d586bf6c4b40f31978af8b8a8de76eed76a24db50b092db374b7d22ff3ea",
+   "file": "gallery/projects-03_raga_explorer.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 867,
+     "Face": 1,
+     "Font": 1,
+     "shape": 867
+    }
+   }
+  },
+  {
+   "id": "projects-04_voice_game",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/04_voice_game.py",
+   "status": "error",
+   "elapsed_s": 0.0264,
+   "error": "ValueError: f.pluck(): sound support is not available on this computer",
+   "traceback": "Traceback (most recent call last):\n  File \"/repo/harness/render_goldens.py\", line 49, in _record\n    (w, h), data = runner(path, frames=frames)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/harness/fgrun.py\", line 101, in run_sketch\n    exec(compile(source, str(path), \"exec\"), namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/examples/gallery/projects/04_voice_game.py\", line 66, in <module>\n    sound_start = f.pluck(\"C5\", 0.5, volume=0.4)\n  File \"/funground/funground/api.py\", line 2747, in pluck\n    return sound.make(values, _sound_frame, \"f.pluck()\")\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/sound.py\", line 991, in make\n    return _from_samples(values, synth.RATE, frame_source, who)\n  File \"/funground/funground/sound.py\", line 116, in _from_samples\n    mixer = _open_mixer(headless, who)\n  File \"/funground/funground/sound.py\", line 74, in _open_mixer\n    raise ValueError(f\"{who}: sound support is not available on this computer\")\nValueError: f.pluck(): sound support is not available on this computer\n",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "projects-05_typographic_portrait",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/05_typographic_portrait.py",
+   "status": "ok",
+   "elapsed_s": 0.6871,
+   "size": [
+    600,
+    450
+   ],
+   "bytes": 810000,
+   "sha256": "1adea780f7dc34f7b2f7ac6552801d05bea31527ce762e675d3cd71164f91413",
+   "file": "gallery/projects-05_typographic_portrait.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1484,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1484
+    }
+   }
+  },
+  {
+   "id": "projects-06_kinetic_type",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/06_kinetic_type.py",
+   "status": "ok",
+   "elapsed_s": 3.5295,
+   "size": [
+    640,
+    320
+   ],
+   "bytes": 614400,
+   "sha256": "1d6a52af06442de05dcf14d7d3383576c89b083ba11ee5e1da37b908fab1c86a",
+   "file": "gallery/projects-06_kinetic_type.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 4,
+     "Face": 2,
+     "Font": 2,
+     "shape": 4
+    }
+   }
+  },
+  {
+   "id": "projects-07_scratch_card",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/07_scratch_card.py",
+   "status": "error",
+   "elapsed_s": 0.0214,
+   "error": "ValueError: f.pluck(): sound support is not available on this computer",
+   "traceback": "Traceback (most recent call last):\n  File \"/repo/harness/render_goldens.py\", line 49, in _record\n    (w, h), data = runner(path, frames=frames)\n                   ~~~~~~^^^^^^^^^^^^^^^^^^^^^\n  File \"/repo/harness/fgrun.py\", line 101, in run_sketch\n    exec(compile(source, str(path), \"exec\"), namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/examples/gallery/projects/07_scratch_card.py\", line 46, in <module>\n    CHIMES = [f.pluck(\"C5\", 0.7, volume=0.4), f.pluck(\"E5\", 0.7, volume=0.4), f.pluck(\"G5\", 0.7, volume=0.4)]\n              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/api.py\", line 2747, in pluck\n    return sound.make(values, _sound_frame, \"f.pluck()\")\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/funground/funground/sound.py\", line 991, in make\n    return _from_samples(values, synth.RATE, frame_source, who)\n  File \"/funground/funground/sound.py\", line 116, in _from_samples\n    mixer = _open_mixer(headless, who)\n  File \"/funground/funground/sound.py\", line 74, in _open_mixer\n    raise ValueError(f\"{who}: sound support is not available on this computer\")\nValueError: f.pluck(): sound support is not available on this computer\n",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "pygame",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "projects-08_flow_field_print",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/projects/08_flow_field_print.py",
+   "status": "ok",
+   "elapsed_s": 3.087,
+   "size": [
+    720,
+    509
+   ],
+   "bytes": 1099440,
+   "sha256": "f42e31ebcd32e2f45273a1e8762f7af551b3b77f10b1c5896fa58c35c747f41c",
+   "file": "gallery/projects-08_flow_field_print.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 1,
+     "Face": 1,
+     "Font": 1,
+     "shape": 1
+    }
+   }
+  },
+  {
+   "id": "studios-01_placement",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/01_placement.py",
+   "status": "ok",
+   "elapsed_s": 0.1699,
+   "size": [
+    420,
+    595
+   ],
+   "bytes": 749700,
+   "sha256": "92935ba3c71453b83d2ce406251c9ae0df3a6de3b83938478c8b6709c258a54f",
+   "file": "gallery/studios-01_placement.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {}
+  },
+  {
+   "id": "studios-02_proximity",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/02_proximity.py",
+   "status": "ok",
+   "elapsed_s": 0.2674,
+   "size": [
+    576,
+    576
+   ],
+   "bytes": 995328,
+   "sha256": "386b5e8c51937c0402528ee187b36bc09b35776d66e1e53bd79fbc346299ebb5",
+   "file": "gallery/studios-02_proximity.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 8,
+     "Face": 1,
+     "Font": 1,
+     "shape": 8
+    }
+   }
+  },
+  {
+   "id": "studios-03_rhythm",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/03_rhythm.py",
+   "status": "ok",
+   "elapsed_s": 0.4024,
+   "size": [
+    842,
+    595
+   ],
+   "bytes": 1502970,
+   "sha256": "d69d442d031b71a66272716eb36199bbf5f69b63c1bc8c947170899412f2399b",
+   "file": "gallery/studios-03_rhythm.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 5,
+     "Face": 1,
+     "Font": 1,
+     "shape": 5
+    }
+   }
+  },
+  {
+   "id": "studios-04_boolean_shapes",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/04_boolean_shapes.py",
+   "status": "ok",
+   "elapsed_s": 0.1999,
+   "size": [
+    595,
+    420
+   ],
+   "bytes": 749700,
+   "sha256": "30ea403e3b435ecedeae66566f19580a2ec683156bc0004d63e0395688bceaf9",
+   "file": "gallery/studios-04_boolean_shapes.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 8,
+     "Face": 1,
+     "Font": 1,
+     "shape": 8
+    },
+    "pathops": {
+     "FillType": 8,
+     "Path": 8,
+     "PathOp": 4,
+     "op": 4
+    }
+   }
+  },
+  {
+   "id": "studios-05_text_as_geometry",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/05_text_as_geometry.py",
+   "status": "ok",
+   "elapsed_s": 0.1983,
+   "size": [
+    420,
+    595
+   ],
+   "bytes": 749700,
+   "sha256": "76629093d4ee0a6d034afdccb6894dec3811dbb44ba0d332cec6def587567d08",
+   "file": "gallery/studios-05_text_as_geometry.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 2,
+     "Face": 1,
+     "Font": 1,
+     "shape": 2
+    },
+    "pathops": {
+     "FillType": 5,
+     "Path": 5,
+     "PathOp": 2,
+     "op": 2
+    }
+   }
+  },
+  {
+   "id": "studios-06_poster_series",
+   "kind": "gallery",
+   "source": "/funground/examples/gallery/studios/06_poster_series.py",
+   "status": "ok",
+   "elapsed_s": 2.0012,
+   "size": [
+    595,
+    842
+   ],
+   "bytes": 1502970,
+   "sha256": "0e64876b72cdfa65b1ff5d87f0a22dc67f537c05b4bca246ccf98603754fc9c4",
+   "file": "gallery/studios-06_poster_series.rgb",
+   "imports": [
+    "cairo",
+    "fontTools",
+    "pathops",
+    "uharfbuzz"
+   ],
+   "used": {
+    "uharfbuzz": {
+     "Buffer": 12,
+     "Face": 2,
+     "Font": 2,
+     "shape": 12
+    }
+   }
+  }
+ ],
+ "environment": {
+  "python": "3.14.2",
+  "implementation": "CPython",
+  "platform": "emscripten",
+  "machine": "wasm32",
+  "env": {
+   "FUNGROUND_HEADLESS": "1",
+   "FUNGROUND_BACKING_SCALE": null,
+   "PIXMAN_DISABLE": null,
+   "SDL_VIDEODRIVER": "dummy"
+  },
+  "pycairo": "1.29.2",
+  "cairo": "1.18.4",
+  "pygame": "2.5.7",
+  "uharfbuzz": "0.56.3",
+  "pathops": "0.9.2",
+  "fontTools": "4.62.1"
+ },
+ "native_modules_loaded": [
+  "PIL._imaging",
+  "PIL._imagingmath",
+  "cairo._cairo",
+  "numpy._core._multiarray_umath",
+  "numpy.linalg._umath_linalg",
+  "pathops._pathops",
+  "pygame.base",
+  "uharfbuzz._harfbuzz"
+ ],
+ "funground_modules_loaded": [
+  "funground",
+  "funground._colornames",
+  "funground.api",
+  "funground.capabilities",
+  "funground.color",
+  "funground.controls",
+  "funground.exploring",
+  "funground.formatted",
+  "funground.geometry",
+  "funground.ir",
+  "funground.marks",
+  "funground.noise",
+  "funground.pages",
+  "funground.paint",
+  "funground.pathops",
+  "funground.paths",
+  "funground.picture",
+  "funground.platform",
+  "funground.platform.base",
+  "funground.platform.headless",
+  "funground.renderers",
+  "funground.renderers.cairo2d",
+  "funground.shapes",
+  "funground.sketch",
+  "funground.state",
+  "funground.surface",
+  "funground.typography",
+  "funground.vector"
+ ],
+ "summary": {
+  "total": 91,
+  "ok": 87,
+  "error": 4
+ }
+}

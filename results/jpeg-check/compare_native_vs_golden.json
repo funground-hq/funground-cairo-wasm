@@ -1,0 +1,116 @@
+{
+ "a": "/home/user/scratch/native",
+ "reference": "/home/user/scratch/fg-pngphoto/tests/golden",
+ "reference_kind": "golden png",
+ "summary": {
+  "all": {
+   "images": 4,
+   "errors": 0,
+   "identical": 4,
+   "differing": 0
+  },
+  "session1": {
+   "images": 0,
+   "errors": 0,
+   "identical": 0,
+   "differing": 0
+  },
+  "gallery": {
+   "images": 4,
+   "errors": 0,
+   "identical": 4,
+   "differing": 0
+  }
+ },
+ "missing_reference": [],
+ "images": {
+  "gallery/images-01_load_image": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/images-02_tint_and_parts": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/images-04_filters": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/projects-05_typographic_portrait": {
+   "width": 600,
+   "height": 450,
+   "pixels": 270000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  }
+ }
+}
