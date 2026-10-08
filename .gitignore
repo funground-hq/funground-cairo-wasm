@@ -5,3 +5,6 @@ __pycache__/
 node_modules/
 downloads/
 dist/
+*.rgb
+results/**/diff*/
+.venv-native/
