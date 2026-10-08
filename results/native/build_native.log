@@ -1,0 +1,1881 @@
+ok  cairo_1.18.4.orig.tar.xz
+ok  pixman_0.46.4.orig.tar.gz
+ok  libpng1.6_1.6.59.orig.tar.gz
+ok  zlib_1.3.dfsg+really1.3.1.orig.tar.gz
+ok  pycairo-1.29.2.tar.gz
+== zlib 1.3.1
+Checking for gcc...
+Building static library libz.a version 1.3.1 with gcc.
+Checking for size_t... Yes.
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+Checking for strerror... Yes.
+Checking for unistd.h... Yes.
+Checking for stdarg.h... Yes.
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+Checking for vsnprintf() in stdio.h... Yes.
+Checking for return value of vsnprintf()... Yes.
+Checking for attribute(visibility) support... Yes.
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o example.o test/example.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o adler32.o adler32.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o crc32.o crc32.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o deflate.o deflate.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o infback.o infback.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inffast.o inffast.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inflate.o inflate.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o inftrees.o inftrees.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o trees.o trees.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o zutil.o zutil.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o compress.o compress.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o uncompr.o uncompr.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzclose.o gzclose.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzlib.o gzlib.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzread.o gzread.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -c -o gzwrite.o gzwrite.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -c -o minigzip.o test/minigzip.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o example64.o test/example.c
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN -I. -D_FILE_OFFSET_BITS=64 -c -o minigzip64.o test/minigzip.c
+ar rc libz.a adler32.o crc32.o deflate.o infback.o inffast.o inflate.o inftrees.o trees.o zutil.o compress.o uncompr.o gzclose.o gzlib.o gzread.o gzwrite.o 
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example example.o -L. libz.a
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip minigzip.o -L. libz.a
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o example64 example64.o -L. libz.a
+gcc -O2 -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN  -o minigzip64 minigzip64.o -L. libz.a
+rm -f /home/user/funground-cairo-wasm/build/native-prefix/lib/libz.a
+cp libz.a /home/user/funground-cairo-wasm/build/native-prefix/lib
+chmod 644 /home/user/funground-cairo-wasm/build/native-prefix/lib/libz.a
+rm -f /home/user/funground-cairo-wasm/build/native-prefix/share/man/man3/zlib.3
+cp zlib.3 /home/user/funground-cairo-wasm/build/native-prefix/share/man/man3
+chmod 644 /home/user/funground-cairo-wasm/build/native-prefix/share/man/man3/zlib.3
+rm -f /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig/zlib.pc
+cp zlib.pc /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+chmod 644 /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig/zlib.pc
+rm -f /home/user/funground-cairo-wasm/build/native-prefix/include/zlib.h /home/user/funground-cairo-wasm/build/native-prefix/include/zconf.h
+cp zlib.h zconf.h /home/user/funground-cairo-wasm/build/native-prefix/include
+chmod 644 /home/user/funground-cairo-wasm/build/native-prefix/include/zlib.h /home/user/funground-cairo-wasm/build/native-prefix/include/zconf.h
+== libpng 1.6.59
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Building for target architecture: x86_64
+-- Found ZLIB: /home/user/funground-cairo-wasm/build/native-prefix/lib/libz.a (found version "1.3.1")  
+-- Looking for pow in m
+-- Looking for pow in m - found
+-- Performing Test HAVE_LD_VERSION_SCRIPT
+-- Performing Test HAVE_LD_VERSION_SCRIPT - Success
+-- Found AWK program: /usr/bin/nawk
+-- Creating standard configuration
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/user/funground-cairo-wasm/build/native-work/libpng/_b
+[1/31] Generating pngprefix.h
+[2/31] Generating pnglibconf.c
+[3/31] Generating scripts/pnglibconf.c
+[4/31] Generating scripts/symbols.out
+[5/31] Generating scripts/symbols.chk
+[6/31] Generating pnglibconf.out
+[7/31] Generating pnglibconf.h
+[8/31] Generating scripts/prefix.out
+[9/31] Generating scripts/vers.out
+[10/31] Generating scripts/sym.out
+[11/31] Generating scripts/intprefix.out
+[12/31] Generating libpng.vers
+[13/31] Generating libpng.sym
+[14/31] Building C object CMakeFiles/png_static.dir/pngmem.c.o
+[15/31] Building C object CMakeFiles/png_static.dir/pngerror.c.o
+[16/31] Building C object CMakeFiles/png_static.dir/pngget.c.o
+[17/31] Building C object CMakeFiles/png_static.dir/pngrio.c.o
+[18/31] Building C object CMakeFiles/png_static.dir/pngpread.c.o
+[19/31] Building C object CMakeFiles/png_static.dir/png.c.o
+[20/31] Building C object CMakeFiles/png_static.dir/pngset.c.o
+[21/31] Building C object CMakeFiles/png_static.dir/pngread.c.o
+[22/31] Building C object CMakeFiles/png_static.dir/pngwio.c.o
+[23/31] Building C object CMakeFiles/png_static.dir/pngtrans.c.o
+[24/31] Building C object CMakeFiles/png_static.dir/pngrutil.c.o
+[25/31] Building C object CMakeFiles/png_static.dir/pngwrite.c.o
+[26/31] Building C object CMakeFiles/png_static.dir/intel/intel_init.c.o
+[27/31] Building C object CMakeFiles/png_static.dir/pngwtran.c.o
+[28/31] Building C object CMakeFiles/png_static.dir/pngrtran.c.o
+[29/31] Building C object CMakeFiles/png_static.dir/pngwutil.c.o
+[30/31] Building C object CMakeFiles/png_static.dir/intel/filter_sse2_intrinsics.c.o
+[31/31] Linking C static library libpng16.a
+-- Install configuration: "Release"
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/libpng16.a
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/libpng.a
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/png.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/pngconf.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/pnglibconf.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/libpng16/png.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/libpng16/pngconf.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/include/libpng16/pnglibconf.h
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/bin/libpng-config
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/bin/libpng16-config
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/share/man/man3/libpng.3
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/share/man/man3/libpngpf.3
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/share/man/man5/png.5
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig/libpng.pc
+-- Up-to-date: /home/user/funground-cairo-wasm/build/native-prefix/bin/libpng-config
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig/libpng16.pc
+-- Up-to-date: /home/user/funground-cairo-wasm/build/native-prefix/bin/libpng16-config
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/libpng/libpng16.cmake
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/libpng/libpng16-release.cmake
+-- Up-to-date: /home/user/funground-cairo-wasm/build/native-prefix/lib/libpng16.a
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/cmake/PNG/PNGTargets.cmake
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/cmake/PNG/PNGTargets-release.cmake
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/cmake/PNG/PNGConfig.cmake
+-- Installing: /home/user/funground-cairo-wasm/build/native-prefix/lib/cmake/PNG/PNGConfigVersion.cmake
+== pixman 0.46.4
+The Meson build system
+Version: 1.12.1
+Source dir: /home/user/funground-cairo-wasm/build/native-work/pixman
+Build dir: /home/user/funground-cairo-wasm/build/native-work/pixman/_b
+Build type: native build
+Project name: pixman
+Project version: 0.46.4
+C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Compiler for C supports arguments -Wundef: YES 
+Compiler for C supports arguments -ftrapping-math: YES 
+Compiler for C supports arguments -Wunused-local-typedefs: YES 
+Checking if "SSSE3 Intrinsic Support" compiles: YES 
+Checking if "test for ASM .func directive" compiles: YES 
+Checking if "test for ASM .syntax unified directive" compiles: NO 
+Checking if "test for ASM leading underscore" links: NO 
+Checking if "GNU Inline ASM support." compiles: YES 
+Dependency openmp for host machine skipped: feature openmp disabled
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Found CMake: /usr/bin/cmake (3.28.3)
+Run-time dependency gtk+-3.0 found: NO  (tried pkg-config and cmake)
+Run-time dependency glib-2.0 found: NO  (tried pkg-config and cmake)
+Library m found: YES
+Run-time dependency threads found: YES
+Has header "pthread.h" : YES 
+Checking for function "sigaction" : YES 
+Checking for function "alarm" : YES 
+Checking for function "mprotect" : YES 
+Checking for function "getpagesize" : YES 
+Checking for function "mmap" : YES 
+Checking for function "getisax" : NO 
+Checking for function "gettimeofday" : YES 
+Checking for function "posix_memalign" : YES 
+Checking for function "feenableexcept" with dependency -lm: YES 
+Header "fenv.h" has symbol "FE_DIVBYZERO" : YES 
+Check usable header "sys/mman.h" : YES 
+Check usable header "fenv.h" : YES 
+Check usable header "unistd.h" : YES 
+Checking if "TLS via __thread" compiles: YES 
+Checking if "__attribute__((constructor))" links: YES 
+Checking if "__attribute__((destructor))" links: YES 
+Checking if "Has float128 support" links: YES 
+Checking for function "clz" : YES 
+Checking if "Support for GCC vector extensions" links: YES 
+Checking for size of "long" : 8 
+Configuring pixman-config.h using configuration
+Configuring pixman-version.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Build targets in project: 4
+
+pixman 0.46.4
+
+  User defined options
+    b_staticpic    : true
+    buildtype      : release
+    default_library: static
+    demos          : disabled
+    gtk            : disabled
+    libdir         : lib
+    libpng         : disabled
+    openmp         : disabled
+    prefix         : /home/user/funground-cairo-wasm/build/native-prefix
+    tests          : disabled
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /home/user/funground-cairo-wasm/.venv-native/bin/ninja
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /home/user/funground-cairo-wasm/.venv-native/bin/ninja -C /home/user/funground-cairo-wasm/build/native-work/pixman/_b -j 4
+ninja: Entering directory `/home/user/funground-cairo-wasm/build/native-work/pixman/_b'
+[1/39] Compiling C object pixman/libpixman-ssse3.a.p/pixman-ssse3.c.o
+[2/39] Compiling C object pixman/libpixman-1.a.p/pixman.c.o
+[3/39] Compiling C object pixman/libpixman-1.a.p/pixman-access.c.o
+[4/39] Compiling C object pixman/libpixman-1.a.p/pixman-arm.c.o
+[5/39] Compiling C object pixman/libpixman-1.a.p/pixman-access-accessors.c.o
+[6/39] Compiling C object pixman/libpixman-1.a.p/pixman-combine32.c.o
+[7/39] Compiling C object pixman/libpixman-1.a.p/pixman-bits-image.c.o
+[8/39] Compiling C object pixman/libpixman-1.a.p/pixman-conical-gradient.c.o
+[9/39] Compiling C object pixman/libpixman-mmx.a.p/pixman-mmx.c.o
+[10/39] Compiling C object pixman/libpixman-1.a.p/pixman-edge.c.o
+[11/39] Compiling C object pixman/libpixman-1.a.p/pixman-edge-accessors.c.o
+[12/39] Compiling C object pixman/libpixman-1.a.p/pixman-filter.c.o
+[13/39] Compiling C object pixman/libpixman-1.a.p/pixman-glyph.c.o
+[14/39] Compiling C object pixman/libpixman-1.a.p/pixman-general.c.o
+[15/39] Compiling C object pixman/libpixman-1.a.p/pixman-gradient-walker.c.o
+[16/39] Compiling C object pixman/libpixman-1.a.p/pixman-image.c.o
+[17/39] Compiling C object pixman/libpixman-1.a.p/pixman-implementation.c.o
+[18/39] Compiling C object pixman/libpixman-1.a.p/pixman-linear-gradient.c.o
+[19/39] Compiling C object pixman/libpixman-1.a.p/pixman-matrix.c.o
+[20/39] Compiling C object pixman/libpixman-1.a.p/pixman-mips.c.o
+[21/39] Compiling C object pixman/libpixman-1.a.p/pixman-noop.c.o
+[22/39] Compiling C object pixman/libpixman-1.a.p/pixman-ppc.c.o
+[23/39] Compiling C object pixman/libpixman-1.a.p/pixman-radial-gradient.c.o
+[24/39] Compiling C object pixman/libpixman-1.a.p/pixman-region16.c.o
+[25/39] Compiling C object pixman/libpixman-1.a.p/pixman-combine-float.c.o
+[26/39] Compiling C object pixman/libpixman-1.a.p/pixman-region32.c.o
+[27/39] Compiling C object pixman/libpixman-1.a.p/pixman-riscv.c.o
+[28/39] Compiling C object pixman/libpixman-sse2.a.p/pixman-sse2.c.o
+[29/39] Compiling C object pixman/libpixman-1.a.p/pixman-solid-fill.c.o
+[30/39] Compiling C object pixman/libpixman-1.a.p/pixman-region64f.c.o
+[31/39] Compiling C object pixman/libpixman-1.a.p/pixman-timer.c.o
+[32/39] Compiling C object pixman/libpixman-1.a.p/pixman-x86.c.o
+[33/39] Linking static target pixman/libpixman-mmx.a
+[34/39] Linking static target pixman/libpixman-sse2.a
+[35/39] Linking static target pixman/libpixman-ssse3.a
+[36/39] Compiling C object pixman/libpixman-1.a.p/pixman-utils.c.o
+[37/39] Compiling C object pixman/libpixman-1.a.p/pixman-trap.c.o
+[38/39] Compiling C object pixman/libpixman-1.a.p/pixman-fast-path.c.o
+[39/39] Linking static target pixman/libpixman-1.a
+ninja: Entering directory `/home/user/funground-cairo-wasm/build/native-work/pixman/_b'
+ninja: no work to do.
+Installing pixman/libpixman-1.a to /home/user/funground-cairo-wasm/build/native-prefix/lib
+Installing /home/user/funground-cairo-wasm/build/native-work/pixman/pixman/pixman.h to /home/user/funground-cairo-wasm/build/native-prefix/include/pixman-1
+Installing /home/user/funground-cairo-wasm/build/native-work/pixman/_b/pixman/pixman-version.h to /home/user/funground-cairo-wasm/build/native-prefix/include/pixman-1
+Installing /home/user/funground-cairo-wasm/build/native-work/pixman/_b/meson-private/pixman-1.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+== cairo 1.18.4
+The Meson build system
+Version: 1.12.1
+Source dir: /home/user/funground-cairo-wasm/build/native-work/cairo
+Build dir: /home/user/funground-cairo-wasm/build/native-work/cairo/_b
+Build type: native build
+Program version.py found: YES (/home/user/funground-cairo-wasm/build/native-work/cairo/version.py)
+Project name: cairo
+Project version: 1.18.4
+C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Compiler for C supports arguments -Werror-implicit-function-declaration: YES 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Compiler for C supports arguments -Wsign-compare: YES 
+Compiler for C supports arguments -Wpacked: YES 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Compiler for C supports arguments -Wvolatile-register-var: YES 
+Compiler for C supports arguments -Wstrict-aliasing=2: YES 
+Compiler for C supports arguments -Winit-self: YES 
+Compiler for C supports arguments -Wunsafe-loop-optimizations: YES 
+Compiler for C supports arguments -Wno-missing-field-initializers: YES 
+Compiler for C supports arguments -Wno-unused-parameter: YES 
+Compiler for C supports arguments -Wno-attributes: YES 
+Compiler for C supports arguments -Wno-long-long: YES 
+Compiler for C supports arguments -Winline: YES 
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES 
+Compiler for C supports arguments -Wno-enum-conversion: YES 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Compiler for C supports arguments -fno-common: YES 
+Compiler for C supports arguments -Wp,-D_FORTIFY_SOURCE=2: YES 
+Program python3 found: YES (/home/user/funground-cairo-wasm/.venv-native/bin/python)
+Library m found: YES
+Dependency gtk+-2.0 for host machine skipped: feature gtk2-utils disabled
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: YES 
+Fetching value of define "__FLOAT_WORD_ORDER__" : 1234 
+Fetching value of define "__ORDER_BIG_ENDIAN__" : 4321 
+Dependency lzo2 for host machine skipped: feature lzo disabled
+Library dl found: YES
+Checking for function "dlsym" with dependency -ldl: YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Run-time dependency zlib found: YES 1.3.1
+Run-time dependency libpng found: YES 1.6.59
+Dependency fontconfig for host machine skipped: feature fontconfig disabled
+Program ttx found: YES (/home/user/funground-cairo-wasm/.venv-native/bin/ttx)
+Dependency freetype2 for host machine skipped: feature freetype disabled
+Dependency x11 for host machine skipped: feature xlib disabled
+Dependency xext for host machine skipped: feature xlib disabled
+Dependency xcb for host machine skipped: feature xcb disabled
+Dependency xcb-render for host machine skipped: feature xcb disabled
+Dependency gobject-2.0 for host machine skipped: feature glib disabled
+Dependency glib-2.0 for host machine skipped: feature glib disabled
+Library bfd skipped: feature symbol-lookup disabled
+Program gs skipped: feature tests disabled
+Dependency libspectre for host machine skipped: feature spectre disabled
+Dependency poppler-glib for host machine skipped: feature tests disabled
+Dependency librsvg-2.0 for host machine skipped: feature tests disabled
+Run-time dependency pixman-1 found: YES 0.46.4
+Checking for size of "void *" : 8 
+Checking for size of "int" : 4 
+Checking for size of "long" : 8 
+Checking for size of "long long" : 8 
+Checking for size of "size_t" : 8 
+Has header "stdint.h" : YES 
+Has header "inttypes.h" : YES 
+Has header "sys/int_types.h" : NO 
+Has header "fcntl.h" : YES 
+Has header "unistd.h" : YES 
+Has header "signal.h" : YES 
+Has header "sys/stat.h" : YES 
+Has header "sys/socket.h" : YES 
+Has header "poll.h" : YES 
+Has header "sys/poll.h" : YES 
+Has header "sys/un.h" : YES 
+Has header "sched.h" : YES 
+Has header "sys/mman.h" : YES 
+Has header "time.h" : YES 
+Has header "libgen.h" : YES 
+Has header "byteswap.h" : YES 
+Has header "signal.h" : YES (cached)
+Has header "setjmp.h" : YES 
+Has header "fenv.h" : YES 
+Has header "sys/wait.h" : YES 
+Has header "sys/stat.h" : YES (cached)
+Has header "io.h" : NO 
+Has header "fenv.h" : YES (cached)
+Has header "xlocale.h" : NO 
+Has header "sys/ioctl.h" : YES 
+Has header "intsafe.h" : NO 
+Has header "alloca.h" : YES 
+Has header "termios.h" : YES 
+Checking for type "uint64_t" : YES 
+Checking for type "uint128_t" : NO 
+Checking for type "__uint128_t" : YES 
+Checking for function "alarm" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "ctime_r" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "localtime_r" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "gmtime_r" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "drand48" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "flockfile" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "funlockfile" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "getline" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "link" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "fork" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "waitpid" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "raise" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "newlocale" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "strtod_l" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "sched_getaffinity" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "mmap" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "clock_gettime" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "feenableexcept" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "fedisableexcept" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "feclearexcept" with dependencies -lm, -ldl, zlib, libpng, pixman-1: YES 
+Checking for function "strndup" : YES 
+Checking if "pthreads" links: YES 
+Checking if "Atomic ops: c11" links: YES 
+Library rt found: YES
+Checking for function "shm_open" with dependency -lrt: YES 
+Compiler for C supports arguments -Wno-attributes: YES (cached)
+Compiler for C supports arguments -Wno-unused-but-set-variable: YES (cached)
+Compiler for C supports arguments -Wno-missing-field-initializers: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-long-long: YES (cached)
+Configuring cairo-features.h using configuration
+Found pkg-config: YES (/usr/bin/pkg-config) 1.8.1
+Program sh found: YES (/usr/bin/sh)
+Configuring cairo-trace using configuration
+Configuring config.h using configuration
+Build targets in project: 10
+
+cairo 1.18.4
+
+  Surface Backends
+    Image                   : YES
+    Recording               : YES
+    Observer                : YES
+    Mime                    : YES
+    Tee                     : YES
+    Xlib                    : NO
+    Xlib Xrender            : NO
+    Quartz                  : NO
+    Quartz-image            : NO
+    XCB                     : NO
+    Win32                   : NO
+    CairoScript             : YES
+    PostScript              : YES
+    PDF                     : YES
+    SVG                     : YES
+
+  Font Backends
+    User                    : YES
+    FreeType                : NO
+    Fontconfig              : NO
+    Win32                   : NO
+    Win32 DWrite            : NO
+    Quartz                  : NO
+
+  Functions
+    PNG functions           : YES
+    X11-xcb                 : NO
+    XCB-shm                 : NO
+
+  Features and Utilities
+    cairo-trace:            : YES
+    cairo-script-interpreter: YES
+    API reference           : NO
+
+  User defined options
+    b_staticpic             : true
+    buildtype               : release
+    default_library         : static
+    dwrite                  : disabled
+    fontconfig              : disabled
+    freetype                : disabled
+    glib                    : disabled
+    gtk_doc                 : false
+    libdir                  : lib
+    lzo                     : disabled
+    png                     : enabled
+    prefix                  : /home/user/funground-cairo-wasm/build/native-prefix
+    quartz                  : disabled
+    spectre                 : disabled
+    symbol-lookup           : disabled
+    tests                   : disabled
+    xcb                     : disabled
+    xlib                    : disabled
+    zlib                    : enabled
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /home/user/funground-cairo-wasm/.venv-native/bin/ninja
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /home/user/funground-cairo-wasm/.venv-native/bin/ninja -C /home/user/funground-cairo-wasm/build/native-work/cairo/_b -j 4
+ninja: Entering directory `/home/user/funground-cairo-wasm/build/native-work/cairo/_b'
+[1/143] Compiling C object src/libcairo.a.p/cairo-atomic.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[2/143] Compiling C object src/libcairo.a.p/cairo-arc.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[3/143] Compiling C object src/libcairo.a.p/cairo-array.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[4/143] Compiling C object src/libcairo.a.p/cairo-base85-stream.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[5/143] Compiling C object src/libcairo.a.p/cairo-base64-stream.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[6/143] Compiling C object src/libcairo.a.p/cairo-analysis-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[7/143] Compiling C object src/libcairo.a.p/cairo-bentley-ottmann-rectilinear.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[8/143] Compiling C object src/libcairo.a.p/cairo-bentley-ottmann-rectangular.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-bentley-ottmann-rectangular.c: In function ‘_cairo_bentley_ottmann_tessellate_rectangular’:
+../src/cairo-bentley-ottmann-rectangular.c:451:1: warning: inlining failed in call to ‘active_edges_to_traps’: --param max-inline-insns-single limit reached [-Winline]
+  451 | active_edges_to_traps (sweep_line_t *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann-rectangular.c:626:25: note: called from here
+  626 |                         active_edges_to_traps (&sweep_line);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann-rectangular.c:451:1: warning: inlining failed in call to ‘active_edges_to_traps’: --param max-inline-insns-single limit reached [-Winline]
+  451 | active_edges_to_traps (sweep_line_t *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann-rectangular.c:638:17: note: called from here
+  638 |                 active_edges_to_traps (&sweep_line);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann-rectangular.c:451:1: warning: inlining failed in call to ‘active_edges_to_traps’: --param max-inline-insns-single limit reached [-Winline]
+  451 | active_edges_to_traps (sweep_line_t *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann-rectangular.c:655:17: note: called from here
+  655 |                 active_edges_to_traps (&sweep_line);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[9/143] Compiling C object src/libcairo.a.p/cairo-boxes.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[10/143] Compiling C object src/libcairo.a.p/cairo-boxes-intersect.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-boxes-intersect.c: In function ‘intersect’:
+../src/cairo-boxes-intersect.c:348:1: warning: inlining failed in call to ‘active_edges’: --param max-inline-insns-single limit reached [-Winline]
+  348 | active_edges (sweep_line_t *sweep, cairo_boxes_t *out)
+      | ^~~~~~~~~~~~
+../src/cairo-boxes-intersect.c:503:21: note: called from here
+  503 |                     active_edges (&sweep_line, out);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-boxes-intersect.c:348:1: warning: inlining failed in call to ‘active_edges’: --param max-inline-insns-single limit reached [-Winline]
+  348 | active_edges (sweep_line_t *sweep, cairo_boxes_t *out)
+      | ^~~~~~~~~~~~
+../src/cairo-boxes-intersect.c:512:13: note: called from here
+  512 |             active_edges (&sweep_line, out);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-boxes-intersect.c:348:1: warning: inlining failed in call to ‘active_edges’: --param max-inline-insns-single limit reached [-Winline]
+  348 | active_edges (sweep_line_t *sweep, cairo_boxes_t *out)
+      | ^~~~~~~~~~~~
+../src/cairo-boxes-intersect.c:521:13: note: called from here
+  521 |             active_edges (&sweep_line, out);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[11/143] Compiling C object src/libcairo.a.p/cairo-botor-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-botor-scan-converter.c: In function ‘botor_generate’:
+../src/cairo-botor-scan-converter.c:963:1: warning: inlining failed in call to ‘event_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  963 | event_insert_if_intersect_below_current_y (sweep_line_t *sweep_line,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:1893:25: note: called from here
+ 1893 |                         event_insert_if_intersect_below_current_y (&sweep_line,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1894 |                                                                    link_to_edge (left), e1);
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:963:1: warning: inlining failed in call to ‘event_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  963 | event_insert_if_intersect_below_current_y (sweep_line_t *sweep_line,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:1898:25: note: called from here
+ 1898 |                         event_insert_if_intersect_below_current_y (&sweep_line,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1899 |                                                                    e1, link_to_edge (right));
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:963:1: warning: inlining failed in call to ‘event_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  963 | event_insert_if_intersect_below_current_y (sweep_line_t *sweep_line,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:1916:26: note: called from here
+ 1916 |                          event_insert_if_intersect_below_current_y (&sweep_line,
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1917 |                                                                     link_to_edge (left),
+      |                                                                     ~~~~~~~~~~~~~~~~~~~~
+ 1918 |                                                                     link_to_edge (right));
+      |                                                                     ~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:963:1: warning: inlining failed in call to ‘event_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  963 | event_insert_if_intersect_below_current_y (sweep_line_t *sweep_line,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:1944:25: note: called from here
+ 1944 |                         event_insert_if_intersect_below_current_y (&sweep_line,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1945 |                                                                    link_to_edge (left), e2);
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:963:1: warning: inlining failed in call to ‘event_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  963 | event_insert_if_intersect_below_current_y (sweep_line_t *sweep_line,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-botor-scan-converter.c:1949:25: note: called from here
+ 1949 |                         event_insert_if_intersect_below_current_y (&sweep_line,
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1950 |                                                                    e1, link_to_edge (right));
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~
+[12/143] Compiling C object src/libcairo.a.p/cairo-bentley-ottmann.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+In function ‘_cairo_bentley_ottmann_tessellate_bo_edges’,
+    inlined from ‘_cairo_bentley_ottmann_tessellate_polygon’ at ../src/cairo-bentley-ottmann.c:1557:14:
+../src/cairo-bentley-ottmann.c:865:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  865 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:1374:26: note: called from here
+ 1374 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, e1);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:865:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  865 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:1380:26: note: called from here
+ 1380 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:865:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  865 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:1406:26: note: called from here
+ 1406 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:865:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  865 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:1432:26: note: called from here
+ 1432 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, e2);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:865:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  865 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c:1438:26: note: called from here
+ 1438 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-bentley-ottmann.c: In function ‘_cairo_bentley_ottmann_tessellate_polygon’:
+../src/cairo-bentley-ottmann.c:1535:27: warning: ‘ymax’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1535 |         for (y = i = 0; y < ymax && i < num_events; y++) {
+      |                         ~~^~~~~~
+../src/cairo-bentley-ottmann.c:1476:33: note: ‘ymax’ was declared here
+ 1476 |     int i, num_events, y, ymin, ymax;
+      |                                 ^~~~
+[13/143] Compiling C object src/libcairo.a.p/cairo-cache.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[14/143] Compiling C object src/libcairo.a.p/cairo-clip-polygon.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[15/143] Compiling C object src/libcairo.a.p/cairo-clip-region.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-clip-region.c: In function ‘_cairo_clip_extract_region’:
+../src/cairo-clip-region.c:84:20: warning: ‘stack_rects’ may be used uninitialized [-Wmaybe-uninitialized]
+   84 |     clip->region = cairo_region_create_rectangles (r, i);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cairoint.h:65,
+                 from ../src/cairo-clip-region.c:42:
+../src/cairo.h:3270:1: note: by argument 1 of type ‘const cairo_rectangle_int_t *’ {aka ‘const struct _cairo_rectangle_int *’} to ‘cairo_region_create_rectangles’ declared here
+ 3270 | cairo_region_create_rectangles (const cairo_rectangle_int_t *rects,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-clip-region.c:55:27: note: ‘stack_rects’ declared here
+   55 |     cairo_rectangle_int_t stack_rects[CAIRO_STACK_ARRAY_LENGTH (cairo_rectangle_int_t)];
+      |                           ^~~~~~~~~~~
+[16/143] Compiling C object src/libcairo.a.p/cairo-clip-boxes.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[17/143] Compiling C object src/libcairo.a.p/cairo-clip-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[18/143] Compiling C object src/libcairo.a.p/cairo-color.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[19/143] Compiling C object src/libcairo.a.p/cairo-clip.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[20/143] Compiling C object src/libcairo.a.p/cairo-composite-rectangles.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[21/143] Compiling C object src/libcairo.a.p/cairo-contour.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[22/143] Compiling C object src/libcairo.a.p/cairo-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[23/143] Compiling C object src/libcairo.a.p/cairo-debug.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[24/143] Compiling C object src/libcairo.a.p/cairo-damage.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[25/143] Compiling C object src/libcairo.a.p/cairo-clip-tor-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[26/143] Compiling C object src/libcairo.a.p/cairo-error.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[27/143] Compiling C object src/libcairo.a.p/cairo-fallback-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[28/143] Compiling C object src/libcairo.a.p/cairo-device.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[29/143] Compiling C object src/libcairo.a.p/cairo-fixed.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[30/143] Compiling C object src/libcairo.a.p/cairo-font-face-twin-data.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[31/143] Compiling C object src/libcairo.a.p/cairo-default-context.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[32/143] Compiling C object src/libcairo.a.p/cairo-font-face.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[33/143] Compiling C object src/libcairo.a.p/cairo-freed-pool.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[34/143] Compiling C object src/libcairo.a.p/cairo-freelist.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[35/143] Compiling C object src/libcairo.a.p/cairo-font-options.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[36/143] Compiling C object src/libcairo.a.p/cairo-font-face-twin.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[37/143] Compiling C object src/libcairo.a.p/cairo-hull.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[38/143] Compiling C object src/libcairo.a.p/cairo-hash.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[39/143] Compiling C object src/libcairo.a.p/cairo-image-info.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[40/143] Compiling C object src/libcairo.a.p/cairo-gstate.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[41/143] Compiling C object src/libcairo.a.p/cairo-image-source.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[42/143] Compiling C object src/libcairo.a.p/cairo-line.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[43/143] Compiling C object src/libcairo.a.p/cairo-image-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-image-surface.c: In function ‘_cairo_format_from_pixman_format’:
+../src/cairo-image-surface.c:95:5: warning: enumeration value ‘PIXMAN_a16b16g16r16’ not handled in switch [-Wswitch-enum]
+   95 |     switch (pixman_format) {
+      |     ^~~~~~
+[44/143] Compiling C object src/libcairo.a.p/cairo-lzw.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[45/143] Compiling C object src/libcairo.a.p/cairo-image-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[46/143] Compiling C object src/libcairo.a.p/cairo-mempool.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[47/143] Compiling C object src/libcairo.a.p/cairo-matrix.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[48/143] Compiling C object src/libcairo.a.p/cairo-mask-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[49/143] Compiling C object src/libcairo.a.p/cairo-mutex.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[50/143] Compiling C object src/libcairo.a.p/cairo-misc.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[51/143] Compiling C object src/libcairo.a.p/cairo-mono-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[52/143] Compiling C object src/libcairo.a.p/cairo-observer.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[53/143] Compiling C object src/libcairo.a.p/cairo-mesh-pattern-rasterizer.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[54/143] Compiling C object src/libcairo.a.p/cairo-no-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[55/143] Compiling C object src/libcairo.a.p/cairo-path-bounds.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[56/143] Compiling C object src/libcairo.a.p/cairo-path-fill.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[57/143] Compiling C object src/libcairo.a.p/cairo-paginated-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[58/143] Compiling C object src/libcairo.a.p/cairo-output-stream.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[59/143] Compiling C object src/libcairo.a.p/cairo-path-in-fill.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[60/143] Compiling C object src/libcairo.a.p/cairo-path-fixed.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[61/143] Compiling C object src/libcairo.a.p/cairo-path-stroke-polygon.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[62/143] Compiling C object src/libcairo.a.p/cairo-path-stroke-boxes.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[63/143] Compiling C object src/libcairo.a.p/cairo-path-stroke-traps.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[64/143] Compiling C object src/libcairo.a.p/cairo-path-stroke-tristrip.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[65/143] Compiling C object src/libcairo.a.p/cairo-path.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[66/143] Compiling C object src/libcairo.a.p/cairo-path-stroke.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[67/143] Compiling C object src/libcairo.a.p/cairo-pen.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[68/143] Compiling C object src/libcairo.a.p/cairo-polygon-intersect.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+In function ‘intersection_sweep’,
+    inlined from ‘_cairo_polygon_intersect’ at ../src/cairo-polygon-intersect.c:1406:14:
+../src/cairo-polygon-intersect.c:932:1: warning: inlining failed in call to ‘event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:1229:26: note: called from here
+ 1229 |                 status = event_queue_insert_if_intersect_below_current_y (&event_queue, left, e1);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:932:1: warning: inlining failed in call to ‘event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:1235:26: note: called from here
+ 1235 |                 status = event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:932:1: warning: inlining failed in call to ‘event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:1255:26: note: called from here
+ 1255 |                 status = event_queue_insert_if_intersect_below_current_y (&event_queue, left, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:932:1: warning: inlining failed in call to ‘event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:1284:26: note: called from here
+ 1284 |                 status = event_queue_insert_if_intersect_below_current_y (&event_queue, left, e2);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:932:1: warning: inlining failed in call to ‘event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  932 | event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-intersect.c:1290:26: note: called from here
+ 1290 |                 status = event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[69/143] Compiling C object src/libcairo.a.p/cairo-polygon.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[70/143] Compiling C object src/libcairo.a.p/cairo-polygon-reduce.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+In function ‘_cairo_bentley_ottmann_tessellate_bo_edges’,
+    inlined from ‘_cairo_polygon_reduce’ at ../src/cairo-polygon-reduce.c:1422:14:
+../src/cairo-polygon-reduce.c:998:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:1297:26: note: called from here
+ 1297 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, e1);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:998:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:1303:26: note: called from here
+ 1303 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:998:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:1323:26: note: called from here
+ 1323 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:998:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:1347:26: note: called from here
+ 1347 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, left, e2);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:998:1: warning: inlining failed in call to ‘_cairo_bo_event_queue_insert_if_intersect_below_current_y’: --param max-inline-insns-single limit reached [-Winline]
+  998 | _cairo_bo_event_queue_insert_if_intersect_below_current_y (cairo_bo_event_queue_t       *event_queue,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-polygon-reduce.c:1353:26: note: called from here
+ 1353 |                 status = _cairo_bo_event_queue_insert_if_intersect_below_current_y (&event_queue, e1, right);
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[71/143] Compiling C object src/libcairo.a.p/cairo-raster-source-pattern.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[72/143] Compiling C object src/libcairo.a.p/cairo-rectangle.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[73/143] Compiling C object src/libcairo.a.p/cairo-region.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[74/143] Compiling C object src/libcairo.a.p/cairo-rectangular-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-rectangular-scan-converter.c: In function ‘_active_edges_to_spans’:
+../src/cairo-rectangular-scan-converter.c:254:1: warning: inlining failed in call to ‘add_cell’: --param max-inline-insns-single limit reached [-Winline]
+  254 | add_cell (sweep_line_t *sweep, int x, int covered, int uncovered)
+      | ^~~~~~~~
+../src/cairo-rectangular-scan-converter.c:355:9: note: called from here
+  355 |         add_cell (sweep, i,
+      |         ^~~~~~~~~~~~~~~~~~~
+  356 |                   -(CAIRO_FIXED_ONE-frac) * height,
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  357 |                   -frac * height);
+      |                   ~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:254:1: warning: inlining failed in call to ‘add_cell’: --param max-inline-insns-single limit reached [-Winline]
+  254 | add_cell (sweep_line_t *sweep, int x, int covered, int uncovered)
+      | ^~~~~~~~
+../src/cairo-rectangular-scan-converter.c:349:9: note: called from here
+  349 |         add_cell (sweep, i,
+      |         ^~~~~~~~~~~~~~~~~~~
+  350 |                   (CAIRO_FIXED_ONE-frac) * height,
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  351 |                   frac * height);
+      |                   ~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:507:6:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:552:5:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:521:2:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:535:3:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:540:6:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:564:6:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘render_rows’,
+    inlined from ‘generate’ at ../src/cairo-rectangular-scan-converter.c:569:2:
+../src/cairo-rectangular-scan-converter.c:310:1: warning: inlining failed in call to ‘_active_edges_to_spans’: --param max-inline-insns-single limit reached [-Winline]
+  310 | _active_edges_to_spans (sweep_line_t    *sweep)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-rectangular-scan-converter.c:477:5: note: called from here
+  477 |     _active_edges_to_spans (sweep_line);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[75/143] Compiling C object src/libcairo.a.p/cairo-pattern.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[76/143] Compiling C object src/libcairo.a.p/cairo-rtree.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[77/143] Compiling C object src/libcairo.a.p/cairo-shape-mask-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[78/143] Compiling C object src/libcairo.a.p/cairo-slope.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[79/143] Compiling C object src/libcairo.a.p/cairo-recording-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[80/143] Compiling C object src/libcairo.a.p/cairo-spans.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[81/143] Compiling C object src/libcairo.a.p/cairo-stroke-dash.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[82/143] Compiling C object src/libcairo.a.p/cairo-spline.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[83/143] Compiling C object src/libcairo.a.p/cairo-spans-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[84/143] Compiling C object src/libcairo.a.p/cairo-scaled-font.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+In file included from /usr/include/string.h:548,
+                 from ../src/cairoint.h:54,
+                 from ../src/cairo-scaled-font.c:41:
+In function ‘memset’,
+    inlined from ‘_cairo_scaled_glyph_lookup’ at ../src/cairo-scaled-font.c:2907:2:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:59:10: warning: ‘__builtin_memset’ offset [0, 231] is out of the bounds [0, 0] [-Warray-bounds=]
+   59 |   return __builtin___memset_chk (__dest, __ch, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   60 |                                  __glibc_objsize0 (__dest));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~
+[85/143] Compiling C object src/libcairo.a.p/cairo-surface-clipper.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[86/143] Compiling C object src/libcairo.a.p/cairo-surface-fallback.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[87/143] Compiling C object src/libcairo.a.p/cairo-stroke-style.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[88/143] Compiling C object src/libcairo.a.p/cairo-surface-offset.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[89/143] Compiling C object src/libcairo.a.p/cairo-surface-subsurface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[90/143] Compiling C object src/libcairo.a.p/cairo-surface-snapshot.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[91/143] Compiling C object src/libcairo.a.p/cairo-time.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[92/143] Compiling C object src/libcairo.a.p/cairo-surface-wrapper.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[93/143] Compiling C object src/libcairo.a.p/cairo-surface-observer.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[94/143] Compiling C object src/libcairo.a.p/cairo-toy-font-face.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[95/143] Compiling C object src/libcairo.a.p/cairo-tor-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[96/143] Compiling C object src/libcairo.a.p/cairo-tor22-scan-converter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[97/143] Compiling C object src/libcairo.a.p/cairo-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[98/143] Compiling C object src/libcairo.a.p/cairo-tristrip.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[99/143] Compiling C object src/libcairo.a.p/cairo-unicode.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[100/143] Compiling C object src/libcairo.a.p/cairo-traps-compositor.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[101/143] Compiling C object src/libcairo.a.p/cairo-version.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[102/143] Compiling C object src/libcairo.a.p/cairo-user-font.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[103/143] Compiling C object src/libcairo.a.p/cairo-wideint.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[104/143] Compiling C object src/libcairo.a.p/cairo-traps.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-traps.c: In function ‘_cairo_traps_extract_region’:
+../src/cairo-traps.c:913:15: warning: ‘stack_rects’ may be used uninitialized [-Wmaybe-uninitialized]
+  913 |     *region = cairo_region_create_rectangles (rects, rect_count);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/cairoint.h:65,
+                 from ../src/cairo-traps.c:40:
+../src/cairo.h:3270:1: note: by argument 1 of type ‘const cairo_rectangle_int_t *’ {aka ‘const struct _cairo_rectangle_int *’} to ‘cairo_region_create_rectangles’ declared here
+ 3270 | cairo_region_create_rectangles (const cairo_rectangle_int_t *rects,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-traps.c:866:27: note: ‘stack_rects’ declared here
+  866 |     cairo_rectangle_int_t stack_rects[CAIRO_STACK_ARRAY_LENGTH (cairo_rectangle_int_t)];
+      |                           ^~~~~~~~~~~
+[105/143] Compiling C object src/libcairo.a.p/cairo-scaled-font-subsets.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[106/143] Compiling C object src/libcairo.a.p/cairo.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[107/143] Compiling C object src/libcairo.a.p/cairo-truetype-subset.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[108/143] Compiling C object src/libcairo.a.p/cairo-type1-fallback.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[109/143] Compiling C object src/libcairo.a.p/cairo-type1-glyph-names.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[110/143] Compiling C object src/libcairo.a.p/cairo-type3-glyph-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[111/143] Compiling C object src/libcairo.a.p/cairo-cff-subset.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[112/143] Compiling C object src/libcairo.a.p/cairo-pdf-shading.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[113/143] Compiling C object src/libcairo.a.p/cairo-type1-subset.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[114/143] Compiling C object src/libcairo.a.p/cairo-tag-stack.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[115/143] Compiling C object src/libcairo.a.p/cairo-deflate-stream.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[116/143] Compiling C object src/libcairo.a.p/cairo-pdf-operators.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[117/143] Compiling C object src/libcairo.a.p/cairo-tag-attributes.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[118/143] Compiling C object src/libcairo.a.p/cairo-png.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[119/143] Compiling C object src/libcairo.a.p/cairo-script-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[120/143] Compiling C object src/libcairo.a.p/cairo-ps-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[121/143] Compiling C object src/libcairo.a.p/cairo-svg-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-svg-surface.c: In function ‘_cairo_svg_surface_create_for_stream_internal.constprop’:
+../src/cairo-svg-surface.c:1142:15: warning: ‘document’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1142 |     surface = _cairo_svg_surface_create_for_document (document, CAIRO_CONTENT_COLOR_ALPHA,
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1143 |                                                       width, height, TRUE);
+      |                                                       ~~~~~~~~~~~~~~~~~~~~
+../src/cairo-svg-surface.c:1128:27: note: ‘document’ was declared here
+ 1128 |     cairo_svg_document_t *document;
+      |                           ^~~~~~~~
+In function ‘_cairo_svg_document_emit_bitmap_glyph_data’,
+    inlined from ‘_cairo_svg_document_emit_glyph’ at ../src/cairo-svg-surface.c:1517:11,
+    inlined from ‘_cairo_svg_document_emit_font_subset’ at ../src/cairo-svg-surface.c:1538:11:
+../src/cairo-svg-surface.c:1493:9: warning: ‘extracted_surface’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1493 |         _cairo_surface_release_source_image (extracted_surface, extracted_image, extracted_image_extra);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-svg-surface.c: In function ‘_cairo_svg_document_emit_font_subset’:
+../src/cairo-svg-surface.c:1371:22: note: ‘extracted_surface’ was declared here
+ 1371 |     cairo_surface_t *extracted_surface;
+      |                      ^~~~~~~~~~~~~~~~~
+[122/143] Compiling C object src/libcairo.a.p/cairo-tee-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[123/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-file.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[124/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-hash.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[125/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-interpreter.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[126/143] Compiling C object src/libcairo.a.p/cairo-pdf-interchange.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../src/cairo-pdf-interchange.c: In function ‘cairo_pdf_interchange_write_node_object.part.0’:
+../src/cairo-pdf-interchange.c:629:52: warning: ‘content_node’ may be used uninitialized [-Wmaybe-uninitialized]
+  629 |                     if (_cairo_array_num_elements (&content_node->mcid) > 0) {
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+../src/cairo-pdf-interchange.c:623:51: note: ‘content_node’ was declared here
+  623 |                     cairo_pdf_struct_tree_node_t *content_node;
+      |                                                   ^~~~~~~~~~~~
+In file included from ../src/cairo-error-private.h:45,
+                 from ../src/cairoint.h:69,
+                 from ../src/cairo-pdf-interchange.c:47:
+../src/cairo-pdf-interchange.c:681:45: warning: ‘content_node’ may be used uninitialized [-Wmaybe-uninitialized]
+  681 |                         assert (content_node->type == PDF_NODE_CONTENT);
+      |                                 ~~~~~~~~~~~~^~~~~~
+../src/cairo-pdf-interchange.c:676:55: note: ‘content_node’ was declared here
+  676 |                         cairo_pdf_struct_tree_node_t *content_node;
+      |                                                       ^~~~~~~~~~~~
+../src/cairo-pdf-interchange.c: In function ‘cairo_pdf_interchange_apply_extents_from_content_ref’:
+../src/cairo-pdf-interchange.c:1262:27: warning: ‘content_node’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1262 |             node->extents = content_node->extents;
+      |             ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../src/cairo-pdf-interchange.c:1251:35: note: ‘content_node’ was declared here
+ 1251 |     cairo_pdf_struct_tree_node_t *content_node;
+      |                                   ^~~~~~~~~~~~
+[127/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-objects.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[128/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-stack.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[129/143] Compiling C object util/cairo-script/csi-replay.p/csi-replay.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[130/143] Compiling C object util/cairo-script/csi-exec.p/csi-exec.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[131/143] Compiling C object util/cairo-script/csi-trace.p/csi-trace.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[132/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-scanner.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[133/143] Compiling C object util/cairo-fdr/libcairo-fdr.a.p/fdr.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[134/143] Linking static target util/cairo-fdr/libcairo-fdr.a
+[135/143] Compiling C object src/libcairo.a.p/cairo-pdf-surface.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[136/143] Linking static target src/libcairo.a
+[137/143] Compiling C object util/cairo-trace/libcairo-trace.a.p/trace.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+[138/143] Linking static target util/cairo-trace/libcairo-trace.a
+[139/143] Compiling C object util/cairo-script/libcairo-script-interpreter.a.p/cairo-script-operators.c.o
+<command-line>: warning: "_FORTIFY_SOURCE" redefined
+<command-line>: note: this is the location of the previous definition
+../util/cairo-script/cairo-script-operators.c: In function ‘_bind’:
+../util/cairo-script/cairo-script-operators.c:962:14: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+  962 |     status = _bind_substitute (ctx, array);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:953:18: note: ‘array’ was declared here
+  953 |     csi_array_t *array;
+      |                  ^~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_image’:
+../util/cairo-script/cairo-script-operators.c:3433:14: warning: ‘dict’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3433 |     status = _image_load_from_dictionary (ctx, dict, &image);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:3422:23: note: ‘dict’ was declared here
+ 3422 |     csi_dictionary_t *dict;
+      |                       ^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_if’:
+../util/cairo-script/cairo-script-operators.c:2859:15: warning: ‘proc’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2859 |     proc->base.ref++;
+      |     ~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:2845:18: note: ‘proc’ was declared here
+ 2845 |     csi_array_t *proc;
+      |                  ^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_repeat’:
+../util/cairo-script/cairo-script-operators.c:4351:19: warning: ‘proc’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4351 |     proc->base.ref++;
+      |     ~~~~~~~~~~~~~~^~
+../util/cairo-script/cairo-script-operators.c:4334:18: note: ‘proc’ was declared here
+ 4334 |     csi_array_t *proc;
+      |                  ^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_write_to_png’:
+../util/cairo-script/cairo-script-operators.c:6342:59: warning: ‘filename’ may be used uninitialized [-Wmaybe-uninitialized]
+ 6342 |     status = cairo_surface_write_to_png (surface, filename->string);
+      |                                                   ~~~~~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6329:19: note: ‘filename’ was declared here
+ 6329 |     csi_string_t *filename;
+      |                   ^~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_ifelse’:
+../util/cairo-script/cairo-script-operators.c:2893:21: warning: ‘false_proc’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2893 |     false_proc->base.ref++;
+      |     ~~~~~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:2874:30: note: ‘false_proc’ was declared here
+ 2874 |     csi_array_t *true_proc, *false_proc;
+      |                              ^~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:2892:20: warning: ‘true_proc’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2892 |     true_proc->base.ref++;
+      |     ~~~~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:2874:18: note: ‘true_proc’ was declared here
+ 2874 |     csi_array_t *true_proc, *false_proc;
+      |                  ^~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_matrix’:
+../util/cairo-script/cairo-script-operators.c:3761:18: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3761 |         status = csi_matrix_new_from_array (ctx, &matrix, array);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:3755:22: note: ‘array’ was declared here
+ 3755 |         csi_array_t *array;
+      |                      ^~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_write_to_script’:
+../util/cairo-script/cairo-script-operators.c:6376:47: warning: ‘filename’ may be used uninitialized [-Wmaybe-uninitialized]
+ 6376 |         script = cairo_script_create (filename->string);
+      |                                       ~~~~~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6357:19: note: ‘filename’ was declared here
+ 6357 |     csi_string_t *filename;
+      |                   ^~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_font’:
+../util/cairo-script/cairo-script-operators.c:2272:14: warning: ‘font’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2272 |     status = _csi_dictionary_get_integer (ctx, font, "type", FALSE, &type);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:2259:23: note: ‘font’ was declared here
+ 2259 |     csi_dictionary_t *font;
+      |                       ^~~~
+In function ‘_do_cairo_op’,
+    inlined from ‘_restore’ at ../util/cairo-script/cairo-script-operators.c:4375:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_restore’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_save’ at ../util/cairo-script/cairo-script-operators.c:4497:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_save’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_paint’ at ../util/cairo-script/cairo-script-operators.c:4078:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_paint’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_fill’ at ../util/cairo-script/cairo-script-operators.c:1382:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_fill’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_reset_clip’ at ../util/cairo-script/cairo-script-operators.c:4369:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_reset_clip’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_stroke’ at ../util/cairo-script/cairo-script-operators.c:5972:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_stroke’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_clip’ at ../util/cairo-script/cairo-script-operators.c:1003:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_clip’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_clip_preserve’ at ../util/cairo-script/cairo-script-operators.c:1009:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_clip_preserve’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_close_path’ at ../util/cairo-script/cairo-script-operators.c:1015:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_close_path’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_new_sub_path’ at ../util/cairo-script/cairo-script-operators.c:3699:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_new_sub_path’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_new_path’ at ../util/cairo-script/cairo-script-operators.c:3692:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_new_path’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_fill_preserve’ at ../util/cairo-script/cairo-script-operators.c:1388:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_fill_preserve’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_do_cairo_op’,
+    inlined from ‘_stroke_preserve’ at ../util/cairo-script/cairo-script-operators.c:5978:12:
+../util/cairo-script/cairo-script-operators.c:584:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  584 |     op (cr);
+      |     ^~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_stroke_preserve’:
+../util/cairo-script/cairo-script-operators.c:575:14: note: ‘cr’ was declared here
+  575 |     cairo_t *cr;
+      |              ^~
+In function ‘_for’,
+    inlined from ‘_for’ at ../util/cairo-script/cairo-script-operators.c:2321:1:
+../util/cairo-script/cairo-script-operators.c:2342:19: warning: ‘proc’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2342 |     proc->base.ref++;
+      |     ~~~~~~~~~~~~~~^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_for’:
+../util/cairo-script/cairo-script-operators.c:2323:18: note: ‘proc’ was declared here
+ 2323 |     csi_array_t *proc;
+      |                  ^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_pop_group’:
+../util/cairo-script/cairo-script-operators.c:4146:25: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4146 |     obj.datum.pattern = cairo_pop_group (cr);
+      |                         ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4137:14: note: ‘cr’ was declared here
+ 4137 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_line_join’:
+../util/cairo-script/cairo-script-operators.c:5138:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5138 |     cairo_set_line_join (cr, line_join);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5128:14: note: ‘cr’ was declared here
+ 5128 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_fill_rule’:
+../util/cairo-script/cairo-script-operators.c:4975:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4975 |     cairo_set_fill_rule (cr, fill_rule);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4963:14: note: ‘cr’ was declared here
+ 4963 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_push_group’:
+../util/cairo-script/cairo-script-operators.c:4168:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4168 |     cairo_push_group_with_content (cr, content);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4155:14: note: ‘cr’ was declared here
+ 4155 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_antialias’:
+../util/cairo-script/cairo-script-operators.c:4791:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4791 |     cairo_set_antialias (cr, antialias);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4779:14: note: ‘cr’ was declared here
+ 4779 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_miter_limit’:
+../util/cairo-script/cairo-script-operators.c:5313:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5313 |     cairo_set_miter_limit (cr, miter_limit);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5301:14: note: ‘cr’ was declared here
+ 5301 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_paint_with_alpha’:
+../util/cairo-script/cairo-script-operators.c:4098:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4098 |     cairo_paint_with_alpha (cr, alpha);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4084:14: note: ‘cr’ was declared here
+ 4084 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_font_size’:
+../util/cairo-script/cairo-script-operators.c:5098:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5098 |     cairo_set_font_size (cr, size);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5086:14: note: ‘cr’ was declared here
+ 5086 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_operator’:
+../util/cairo-script/cairo-script-operators.c:5334:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5334 |     cairo_set_operator (cr, val);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5321:14: note: ‘cr’ was declared here
+ 5321 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_tolerance’:
+../util/cairo-script/cairo-script-operators.c:5531:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5531 |     cairo_set_tolerance (cr, tolerance);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5519:14: note: ‘cr’ was declared here
+ 5519 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_line_cap’:
+../util/cairo-script/cairo-script-operators.c:5119:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5119 |     cairo_set_line_cap (cr, line_cap);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5107:14: note: ‘cr’ was declared here
+ 5107 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_line_width’:
+../util/cairo-script/cairo-script-operators.c:5159:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5159 |     cairo_set_line_width (cr, line_width);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5147:14: note: ‘cr’ was declared here
+ 5147 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_hairline’:
+../util/cairo-script/cairo-script-operators.c:5180:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5180 |     cairo_set_hairline (cr, set_hairline);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5168:14: note: ‘cr’ was declared here
+ 5168 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_scaled_font’:
+../util/cairo-script/cairo-script-operators.c:5355:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5355 |     cairo_set_scaled_font (cr, font);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5342:14: note: ‘cr’ was declared here
+ 5342 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_show_text’:
+../util/cairo-script/cairo-script-operators.c:5788:30: warning: ‘text’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5788 |     cairo_show_text (cr, text->string);
+      |                          ~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5776:19: note: ‘text’ was declared here
+ 5776 |     csi_string_t *text;
+      |                   ^~~~
+../util/cairo-script/cairo-script-operators.c:5788:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5788 |     cairo_show_text (cr, text->string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5777:14: note: ‘cr’ was declared here
+ 5777 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_font_face’:
+../util/cairo-script/cairo-script-operators.c:5028:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5028 |     cairo_set_font_face (cr, font);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5015:14: note: ‘cr’ was declared here
+ 5015 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_mask’:
+../util/cairo-script/cairo-script-operators.c:3724:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3724 |     cairo_mask (cr, pattern);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:3711:14: note: ‘cr’ was declared here
+ 3711 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_source’:
+../util/cairo-script/cairo-script-operators.c:5376:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5376 |     cairo_set_source (cr, pattern);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5363:14: note: ‘cr’ was declared here
+ 5363 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_text_path’:
+../util/cairo-script/cairo-script-operators.c:6270:30: warning: ‘text’ may be used uninitialized [-Wmaybe-uninitialized]
+ 6270 |     cairo_text_path (cr, text->string);
+      |                          ~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6258:19: note: ‘text’ was declared here
+ 6258 |     csi_string_t *text;
+      |                   ^~~~
+../util/cairo-script/cairo-script-operators.c:6270:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 6270 |     cairo_text_path (cr, text->string);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6259:14: note: ‘cr’ was declared here
+ 6259 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_font_options’:
+../util/cairo-script/cairo-script-operators.c:5051:14: warning: ‘dict’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5051 |     status = _font_options_load_from_dictionary (ctx, dict, options);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5038:23: note: ‘dict’ was declared here
+ 5038 |     csi_dictionary_t *dict;
+      |                       ^~~~
+../util/cairo-script/cairo-script-operators.c:5055:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5055 |     cairo_set_font_options (cr, options);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5037:14: note: ‘cr’ was declared here
+ 5037 |     cairo_t *cr;
+      |              ^~
+In function ‘_curve_to’,
+    inlined from ‘_curve_to’ at ../util/cairo-script/cairo-script-operators.c:1130:1:
+../util/cairo-script/cairo-script-operators.c:1164:9: warning: ‘y3’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1164 |         cairo_curve_to (obj->datum.cr, x1, y1, x2, y2, x3, y3);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_curve_to’:
+../util/cairo-script/cairo-script-operators.c:1137:16: note: ‘y3’ was declared here
+ 1137 |     double x3, y3;
+      |                ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_map_to_image’:
+../util/cairo-script/cairo-script-operators.c:3790:25: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 3790 |     switch (array->stack.len) {
+      |             ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:3775:18: note: ‘array’ was declared here
+ 3775 |     csi_array_t *array;
+      |                  ^~~~~
+In function ‘_rel_curve_to’,
+    inlined from ‘_rel_curve_to’ at ../util/cairo-script/cairo-script-operators.c:4241:1:
+../util/cairo-script/cairo-script-operators.c:4275:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4275 |     cairo_rel_curve_to (cr, x1, y1, x2, y2, x3, y3);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_rel_curve_to’:
+../util/cairo-script/cairo-script-operators.c:4247:14: note: ‘cr’ was declared here
+ 4247 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_glyph_path’:
+../util/cairo-script/cairo-script-operators.c:2752:33: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2752 |     for (i = 0; i < array->stack.len; i++) {
+      |                     ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:2735:18: note: ‘array’ was declared here
+ 2735 |     csi_array_t *array;
+      |                  ^~~~~
+../util/cairo-script/cairo-script-operators.c:2779:15: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 2779 |     nglyphs = _glyph_string (ctx, array, cairo_get_scaled_font (cr), glyphs);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:2737:14: note: ‘cr’ was declared here
+ 2737 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_show_glyphs’:
+../util/cairo-script/cairo-script-operators.c:5813:33: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5813 |     for (i = 0; i < array->stack.len; i++) {
+      |                     ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:5796:18: note: ‘array’ was declared here
+ 5796 |     csi_array_t *array;
+      |                  ^~~~~
+../util/cairo-script/cairo-script-operators.c:5840:15: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5840 |     nglyphs = _glyph_string (ctx, array, cairo_get_scaled_font (cr), glyphs);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5798:14: note: ‘cr’ was declared here
+ 5798 |     cairo_t *cr;
+      |              ^~
+In function ‘_rel_line_to’,
+    inlined from ‘_rel_line_to’ at ../util/cairo-script/cairo-script-operators.c:4281:1:
+../util/cairo-script/cairo-script-operators.c:4301:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4301 |     cairo_rel_line_to (cr, x, y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_rel_line_to’:
+../util/cairo-script/cairo-script-operators.c:4285:14: note: ‘cr’ was declared here
+ 4285 |     cairo_t *cr;
+      |              ^~
+In function ‘_rel_move_to’,
+    inlined from ‘_rel_move_to’ at ../util/cairo-script/cairo-script-operators.c:4307:1:
+../util/cairo-script/cairo-script-operators.c:4326:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4326 |     cairo_rel_move_to (cr, x, y);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_rel_move_to’:
+../util/cairo-script/cairo-script-operators.c:4311:14: note: ‘cr’ was declared here
+ 4311 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_record’:
+../util/cairo-script/cairo-script-operators.c:6227:25: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 6227 |     switch (array->stack.len) {
+      |             ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:6212:18: note: ‘array’ was declared here
+ 6212 |     csi_array_t *array;
+      |                  ^~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_scaled_font’:
+../util/cairo-script/cairo-script-operators.c:4615:14: warning: ‘dict’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4615 |     status = _font_options_load_from_dictionary (ctx, dict, options);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:4603:23: note: ‘dict’ was declared here
+ 4603 |     csi_dictionary_t *dict;
+      |                       ^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_font_matrix’:
+../util/cairo-script/cairo-script-operators.c:5077:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5077 |     cairo_set_font_matrix (cr, &m);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5065:14: note: ‘cr’ was declared here
+ 5065 |     cairo_t *cr;
+      |              ^~
+In function ‘_set_dash’,
+    inlined from ‘_set_dash’ at ../util/cairo-script/cairo-script-operators.c:4797:1:
+../util/cairo-script/cairo-script-operators.c:4816:21: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4816 |     if (array->stack.len == 0) {
+      |         ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_dash’:
+../util/cairo-script/cairo-script-operators.c:4799:18: note: ‘array’ was declared here
+ 4799 |     csi_array_t *array;
+      |                  ^~~~~
+In function ‘_set_dash’,
+    inlined from ‘_set_dash’ at ../util/cairo-script/cairo-script-operators.c:4797:1:
+../util/cairo-script/cairo-script-operators.c:4845:9: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4845 |         cairo_set_dash (cr, dashes, n, offset);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_dash’:
+../util/cairo-script/cairo-script-operators.c:4801:14: note: ‘cr’ was declared here
+ 4801 |     cairo_t *cr;
+      |              ^~
+In file included from ../util/cairo-script/cairo-script-operators.c:39:
+../util/cairo-script/cairo-script-private.h: In function ‘_surface’:
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6120:17: note: called from here
+ 6120 |                 cairo_surface_set_fallback_resolution (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6121 |                                                        csi_number_get_value
+      |                                                        ~~~~~~~~~~~~~~~~~~~~
+ 6122 |                                                        (&array->stack.objects[0]),
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6123 |                                                        csi_number_get_value
+      |                                                        ~~~~~~~~~~~~~~~~~~~~
+ 6124 |                                                        (&array->stack.objects[1]));
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6120:17: note: called from here
+ 6120 |                 cairo_surface_set_fallback_resolution (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6121 |                                                        csi_number_get_value
+      |                                                        ~~~~~~~~~~~~~~~~~~~~
+ 6122 |                                                        (&array->stack.objects[0]),
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6123 |                                                        csi_number_get_value
+      |                                                        ~~~~~~~~~~~~~~~~~~~~
+ 6124 |                                                        (&array->stack.objects[1]));
+      |                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6169:17: note: called from here
+ 6169 |                 cairo_surface_set_device_offset (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6170 |                                                  csi_number_get_value
+      |                                                  ~~~~~~~~~~~~~~~~~~~~
+ 6171 |                                                  (&array->stack.objects[0]),
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6172 |                                                  csi_number_get_value
+      |                                                  ~~~~~~~~~~~~~~~~~~~~
+ 6173 |                                                  (&array->stack.objects[1]));
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6169:17: note: called from here
+ 6169 |                 cairo_surface_set_device_offset (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6170 |                                                  csi_number_get_value
+      |                                                  ~~~~~~~~~~~~~~~~~~~~
+ 6171 |                                                  (&array->stack.objects[0]),
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6172 |                                                  csi_number_get_value
+      |                                                  ~~~~~~~~~~~~~~~~~~~~
+ 6173 |                                                  (&array->stack.objects[1]));
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6192:17: note: called from here
+ 6192 |                 cairo_surface_set_device_scale (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6193 |                                                 csi_number_get_value
+      |                                                 ~~~~~~~~~~~~~~~~~~~~
+ 6194 |                                                 (&array->stack.objects[0]),
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6195 |                                                 csi_number_get_value
+      |                                                 ~~~~~~~~~~~~~~~~~~~~
+ 6196 |                                                 (&array->stack.objects[1]));
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-private.h:880:1: warning: inlining failed in call to ‘csi_number_get_value’: call is unlikely and code size would grow [-Winline]
+  880 | csi_number_get_value (const csi_object_t *obj)
+      | ^~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:6192:17: note: called from here
+ 6192 |                 cairo_surface_set_device_scale (surface,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6193 |                                                 csi_number_get_value
+      |                                                 ~~~~~~~~~~~~~~~~~~~~
+ 6194 |                                                 (&array->stack.objects[0]),
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6195 |                                                 csi_number_get_value
+      |                                                 ~~~~~~~~~~~~~~~~~~~~
+ 6196 |                                                 (&array->stack.objects[1]));
+      |                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘_csi_dictionary_get_number’,
+    inlined from ‘_surface’ at ../util/cairo-script/cairo-script-operators.c:6059:14:
+../util/cairo-script/cairo-script-operators.c:530:14: warning: ‘dict’ may be used uninitialized [-Wmaybe-uninitialized]
+  530 |     status = csi_dictionary_get (ctx, dict, key.datum.name, &obj);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_surface’:
+../util/cairo-script/cairo-script-operators.c:6043:23: note: ‘dict’ was declared here
+ 6043 |     csi_dictionary_t *dict;
+      |                       ^~~~
+In function ‘_set_source_rgb’,
+    inlined from ‘_set_source_rgb’ at ../util/cairo-script/cairo-script-operators.c:5459:1:
+../util/cairo-script/cairo-script-operators.c:5480:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5480 |     cairo_set_source_rgb (cr, r, g, b);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_source_rgb’:
+../util/cairo-script/cairo-script-operators.c:5463:14: note: ‘cr’ was declared here
+ 5463 |     cairo_t *cr;
+      |              ^~
+In function ‘_select_font_face’,
+    inlined from ‘_select_font_face’ at ../util/cairo-script/cairo-script-operators.c:4650:1:
+../util/cairo-script/cairo-script-operators.c:4673:39: warning: ‘family’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4673 |     cairo_select_font_face (cr, family->string, slant, weight);
+      |                                 ~~~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_select_font_face’:
+../util/cairo-script/cairo-script-operators.c:4655:19: note: ‘family’ was declared here
+ 4655 |     csi_string_t *family;
+      |                   ^~~~~~
+In function ‘_select_font_face’,
+    inlined from ‘_select_font_face’ at ../util/cairo-script/cairo-script-operators.c:4650:1:
+../util/cairo-script/cairo-script-operators.c:4673:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4673 |     cairo_select_font_face (cr, family->string, slant, weight);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_select_font_face’:
+../util/cairo-script/cairo-script-operators.c:4652:14: note: ‘cr’ was declared here
+ 4652 |     cairo_t *cr;
+      |              ^~
+In function ‘_rectangle’,
+    inlined from ‘_rectangle’ at ../util/cairo-script/cairo-script-operators.c:4208:1:
+../util/cairo-script/cairo-script-operators.c:4235:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 4235 |     cairo_rectangle (cr, x, y, w, h);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_rectangle’:
+../util/cairo-script/cairo-script-operators.c:4213:14: note: ‘cr’ was declared here
+ 4213 |     cairo_t *cr;
+      |              ^~
+In function ‘_set_source_rgba’,
+    inlined from ‘_set_source_rgba’ at ../util/cairo-script/cairo-script-operators.c:5486:1:
+../util/cairo-script/cairo-script-operators.c:5510:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5510 |     cairo_set_source_rgba (cr, r, g, b, a);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_set_source_rgba’:
+../util/cairo-script/cairo-script-operators.c:5490:14: note: ‘cr’ was declared here
+ 5490 |     cairo_t *cr;
+      |              ^~
+../util/cairo-script/cairo-script-operators.c: In function ‘_show_text_glyphs.part.0’:
+../util/cairo-script/cairo-script-operators.c:5926:33: warning: ‘array’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5926 |     for (i = 0; i < array->stack.len; i++) {
+      |                     ~~~~~~~~~~~~^~~~
+../util/cairo-script/cairo-script-operators.c:5854:18: note: ‘array’ was declared here
+ 5854 |     csi_array_t *array;
+      |                  ^~~~~
+../util/cairo-script/cairo-script-operators.c:5955:40: warning: ‘utf8_string’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5955 |                             utf8_string->string, utf8_string->len,
+      |                             ~~~~~~~~~~~^~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5856:19: note: ‘utf8_string’ was declared here
+ 5856 |     csi_string_t *utf8_string;
+      |                   ^~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5953:15: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+ 5953 |     nglyphs = _glyph_string (ctx, array, cairo_get_scaled_font (cr), glyphs);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c:5858:14: note: ‘cr’ was declared here
+ 5858 |     cairo_t *cr;
+      |              ^~
+In function ‘_arc_negative’,
+    inlined from ‘_arc_negative’ at ../util/cairo-script/cairo-script-operators.c:843:1:
+../util/cairo-script/cairo-script-operators.c:873:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  873 |     cairo_arc_negative (cr, x, y, r, theta1, theta2);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_arc_negative’:
+../util/cairo-script/cairo-script-operators.c:848:14: note: ‘cr’ was declared here
+  848 |     cairo_t *cr;
+      |              ^~
+In function ‘_arc’,
+    inlined from ‘_arc’ at ../util/cairo-script/cairo-script-operators.c:807:1:
+../util/cairo-script/cairo-script-operators.c:837:5: warning: ‘cr’ may be used uninitialized [-Wmaybe-uninitialized]
+  837 |     cairo_arc (cr, x, y, r, theta1, theta2);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../util/cairo-script/cairo-script-operators.c: In function ‘_arc’:
+../util/cairo-script/cairo-script-operators.c:812:14: note: ‘cr’ was declared here
+  812 |     cairo_t *cr;
+      |              ^~
+[140/143] Linking static target util/cairo-script/libcairo-script-interpreter.a
+[141/143] Linking target util/cairo-script/csi-exec
+[142/143] Linking target util/cairo-script/csi-replay
+[143/143] Linking target util/cairo-script/csi-trace
+ninja: Entering directory `/home/user/funground-cairo-wasm/build/native-work/cairo/_b'
+ninja: no work to do.
+Installing src/libcairo.a to /home/user/funground-cairo-wasm/build/native-prefix/lib
+Installing util/cairo-script/libcairo-script-interpreter.a to /home/user/funground-cairo-wasm/build/native-prefix/lib
+Installing util/cairo-trace/libcairo-trace.a to /home/user/funground-cairo-wasm/build/native-prefix/lib/cairo
+Installing util/cairo-fdr/libcairo-fdr.a to /home/user/funground-cairo-wasm/build/native-prefix/lib/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-version.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-deprecated.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-svg.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-script.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-ps.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-pdf.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/src/cairo-tee.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/src/cairo-features.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/util/cairo-script/cairo-script-interpreter.h to /home/user/funground-cairo-wasm/build/native-prefix/include/cairo
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-script-interpreter.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/util/cairo-trace/cairo-trace to /home/user/funground-cairo-wasm/build/native-prefix/bin
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-png.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-svg.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-script.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-ps.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-pdf.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+Installing /home/user/funground-cairo-wasm/build/native-work/cairo/_b/meson-private/cairo-tee.pc to /home/user/funground-cairo-wasm/build/native-prefix/lib/pkgconfig
+== pycairo 1.29.2
+warning: The `UV_NATIVE_TLS` environment variable is deprecated and will be removed in a future release. Use `UV_SYSTEM_CERTS` instead.
+Using Python 3.14.6 environment at: .venv-native
+Resolved 1 package in 10ms
+   Building pycairo @ file:///home/user/funground-cairo-wasm/build/native-work/pycairo
+      Built pycairo @ file:///home/user/funground-cairo-wasm/build/native-work/pycairo
+Prepared 1 package in 6.48s
+Uninstalled 1 package in 54ms
+Installed 1 package in 1ms
+ ~ pycairo==1.29.2 (from file:///home/user/funground-cairo-wasm/build/native-work/pycairo)
+python 3.14.6
+pycairo 1.29.2 cairo 1.18.4
+	linux-vdso.so.1 (0x00007fd4cf38b000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fd4cf28f000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd4cec00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd4cf38d000)
+
+OK: statically linked cairo 1.18.4

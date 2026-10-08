@@ -1,0 +1,157 @@
+{
+ "a": "/home/user/scratch/pyo",
+ "reference": "/home/user/scratch/nonsimd",
+ "reference_kind": "rendered",
+ "summary": {
+  "all": {
+   "images": 4,
+   "errors": 0,
+   "identical": 3,
+   "differing": 1,
+   "max_abs_diff_overall": 1,
+   "median_max_abs_diff": 1.0,
+   "median_diff_pixels_pct": 0.23037,
+   "max_diff_pixels_pct": 0.23037,
+   "all_edge_only": true,
+   "edge_only_images": 1,
+   "differing_ids": [
+    "gallery/projects-05_typographic_portrait"
+   ],
+   "histogram_total": {
+    "1": 622,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   }
+  },
+  "session1": {
+   "images": 0,
+   "errors": 0,
+   "identical": 0,
+   "differing": 0
+  },
+  "gallery": {
+   "images": 4,
+   "errors": 0,
+   "identical": 3,
+   "differing": 1,
+   "max_abs_diff_overall": 1,
+   "median_max_abs_diff": 1.0,
+   "median_diff_pixels_pct": 0.23037,
+   "max_diff_pixels_pct": 0.23037,
+   "all_edge_only": true,
+   "edge_only_images": 1,
+   "differing_ids": [
+    "gallery/projects-05_typographic_portrait"
+   ],
+   "histogram_total": {
+    "1": 622,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   }
+  }
+ },
+ "missing_reference": [],
+ "images": {
+  "gallery/images-01_load_image": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/images-02_tint_and_parts": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/images-04_filters": {
+   "width": 640,
+   "height": 400,
+   "pixels": 256000,
+   "byte_identical": true,
+   "diff_pixels": 0,
+   "diff_pixels_pct": 0.0,
+   "max_abs_diff": 0,
+   "mean_abs_diff": 0.0,
+   "histogram": {
+    "1": 0,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "edge_only": true,
+   "share_in_edge_mask": null,
+   "bbox": null,
+   "diff_channel_values": 0
+  },
+  "gallery/projects-05_typographic_portrait": {
+   "width": 600,
+   "height": 450,
+   "pixels": 270000,
+   "byte_identical": false,
+   "diff_pixels": 622,
+   "diff_pixels_pct": 0.23037,
+   "max_abs_diff": 1,
+   "mean_abs_diff": 0.3333,
+   "mean_max_channel_diff": 1.0,
+   "diff_channel_values": 622,
+   "histogram": {
+    "1": 622,
+    "2": 0,
+    "3-4": 0,
+    "5-8": 0,
+    "9-16": 0,
+    "17+": 0
+   },
+   "share_in_edge_mask": 1.0,
+   "edge_only": true,
+   "bbox": [
+    102,
+    143,
+    568,
+    419
+   ],
+   "edge_mask_pct_of_image": 50.259
+  }
+ }
+}

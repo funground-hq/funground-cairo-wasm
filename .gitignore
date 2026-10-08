@@ -1,0 +1,12 @@
+build/
+.venv*/
+__pycache__/
+*.pyc
+node_modules/
+downloads/
+dist/
+*.rgb
+results/**/diff*/
+.venv-native/
+!results/**/diff-samples/
+!results/**/diff-samples/*.png

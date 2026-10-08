@@ -1,0 +1,23 @@
+Why: Pyodide is single-threaded (no pthreads). emcc accepts -pthread, so cairo's pthread probe succeeds and
+the build gets -pthread (shared-memory wasm, 'atomics' ABI), which cannot be linked into a Pyodide side module.
+On emscripten skip the probe and define CAIRO_NO_MUTEX=1 (cairo's no-op mutexes; not thread safe, which is fine here).
+
+--- a/meson.build
++++ b/meson.build
+@@ -713,8 +713,15 @@
+ pthread_c_args = []
+ pthread_link_args = []
+ 
++# Pyodide has no pthreads (single-threaded wasm). emcc accepts -pthread, which would make the
++# check below succeed and turn the output into shared-memory/atomics wasm that cannot link with
++# Pyodide's side modules. Use cairo's no-op mutex implementation instead.
++if host_machine.system() == 'emscripten'
++  conf.set('CAIRO_NO_MUTEX', 1)
++endif
++
+ foreach thread_flags : check_thread_flags
+-  if not conf.has('CAIRO_HAS_PTHREAD')
++  if not conf.has('CAIRO_HAS_PTHREAD') and host_machine.system() != 'emscripten'
+     cflags = thread_flags[0]
+     lflags = thread_flags[1]
+     real_pthread = thread_flags.length() > 2 ? thread_flags[2].get('real', true) : true

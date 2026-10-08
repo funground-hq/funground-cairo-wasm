@@ -1,0 +1,21 @@
+Why: Pyodide has no pthreads (single-threaded wasm). emcc accepts -pthread, so dependency('threads')
+succeeds and pixman-1.pc then carries `-pthread -sPTHREAD_POOL_SIZE=4` into every consumer, producing
+shared-memory wasm that cannot be linked into a Pyodide side module. Treat emscripten as having no threads.
+
+--- a/meson.build
++++ b/meson.build
+@@ -464,7 +464,13 @@
+   config.set('HAVE_LIBPNG', 1)
+ endif
+ dep_m = cc.find_library('m', required : false)
+-dep_threads = dependency('threads')
++# Pyodide is single-threaded: emcc accepts -pthread and dependency('threads') would add it (plus
++# -sPTHREAD_POOL_SIZE) to pixman-1.pc, shared-memory-izing everything that links pixman.
++if host_machine.system() == 'emscripten'
++  dep_threads = null_dep
++else
++  dep_threads = dependency('threads')
++endif
+ 
+ # MSVC-style compilers do not come with pthreads, so we must link
+ # to it explicitly, currently pthreads-win32 is supported
