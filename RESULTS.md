@@ -42,8 +42,8 @@ gate can't separate B from C as written. The maintainer has to rule on it; see "
 | pixman | 0.46.4 | generic C paths only: pixman has no wasm SIMD |
 | libpng / zlib | 1.6.59 / 1.3.1 | |
 | pycairo | 1.29.2 | built from the PyPI sdist |
-| skia-pathops | 0.9.2 | built here: funground imports it unconditionally (D-005) |
-| uharfbuzz | 0.56.3 (HarfBuzz 14.6.0) | PyPI's own `pyemscripten_2026_0` wheel, not built (D-004) |
+| skia-pathops | 0.9.2 | built here: funground imports it unconditionally (CW-D-005) |
+| uharfbuzz | 0.56.3 (HarfBuzz 14.6.0) | PyPI's own `pyemscripten_2026_0` wheel, not built (CW-D-004) |
 | From the Pyodide distribution | fontTools 4.62.1, Pillow 12.2.0, numpy 2.4.6, pygame-ce 2.5.7, micropip 0.11.1 | |
 | From PyPI (pure Python) | svgelements 1.9.6, pypdf 6.19.0 | installed with micropip from local files |
 | Node | 22.22.0 (V8 12.4) | Intel Xeon 2.8 GHz, 4 vCPUs |
@@ -74,7 +74,7 @@ gate can't separate B from C as written. The maintainer has to rule on it; see "
 
 ## (b) Goldens
 
-Three-way comparison (D-003): the Windows goldens, a native Linux build from the same sources, and
+Three-way comparison (CW-D-003): the Windows goldens, a native Linux build from the same sources, and
 Pyodide in Node. All images are compared byte for byte, then per pixel.
 
 | Set | Native vs golden | Pyodide vs golden | Pyodide vs native |
@@ -114,7 +114,7 @@ Diff crops (gain ×32): `results/pyodide/diff-samples/`. Data: `results/pyodide/
 
 The 10 gallery examples with the most IR ops in their 30th frame. Each was timed 30 times after 5
 warm-up runs, and the table shows the median in ms. Node and native ran back to back on the same
-machine (D-006). Full table: `results/bench_comparison.md`.
+machine (CW-D-006). Full table: `results/bench_comparison.md`.
 
 - **Replay** = `CairoRenderer` replaying the captured frame's IR onto a surface. 1280×800 uses
   funground's own HiDPI path (`attach(w·2, h·2, scale·2)`). This is what Cairo costs per frame.
