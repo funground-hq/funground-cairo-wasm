@@ -1,6 +1,6 @@
 # ADR-001: Build route — pyodide-build with static cairo, pixman, libpng and zlib
 
-**Status:** accepted for the spike (8 October 2026). **Decision:** D-001.
+**Status:** accepted for the spike (8 October 2026). **Decision:** CW-D-001.
 
 ## Context
 

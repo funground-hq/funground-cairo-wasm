@@ -1,6 +1,6 @@
 # ADR-002: Source versions and where they come from
 
-**Status:** accepted for the spike (8 October 2026). **Decision:** D-002.
+**Status:** accepted for the spike (8 October 2026). **Decision:** CW-D-002.
 
 ## Context
 
