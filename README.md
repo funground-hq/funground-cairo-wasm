@@ -3,7 +3,7 @@ WebAssembly (Pyodide) builds of pycairo, uharfbuzz and skia-pathops for fungroun
 
 Spike S-134. Builds `pycairo 1.29.2` (static cairo 1.18.4 + pixman 0.46.4 + libpng 1.6.59 + zlib 1.3.1)
 and `skia-pathops 0.9.2` (bundled Skia) as wheels for **Pyodide 314.0.7** (CPython 3.14.2, Emscripten 5.0.3,
-wheel tag `pyemscripten_2026_0_wasm32`), and fetches the prebuilt `uharfbuzz` wheel. Design: `docs/architecture.md`, `docs/adr/`.
+wheel tag `pyemscripten_2026_0_wasm32`), and fetches the prebuilt `uharfbuzz` wheel.
 
 ## Prerequisites
 Linux x86-64 with bash, git, curl, cmake, make, pkg-config, patch, node 22 (smoke test) and either `uv` or Python 3.14.
